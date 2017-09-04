@@ -1,0 +1,168 @@
+/****************************CSS FILE**************************/
+
+/*********************SYDE***************************************/
+
+
+/*************************CLEAN UP***********************************/
+.white{
+	color: #ffffff;
+}
+
+
+
+/******************************************HOME PAGE STYLING**************************************/
+.syde-header{
+	margin-top: 30px;
+}
+.menu-links{
+	list-style: none;
+	padding-top: 10px;
+}
+
+.links-list{
+	float: left;
+	padding-right: 20px;
+}
+
+.syde-logo{
+	max-height:100px;
+
+}
+.above-fold{
+	background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(bottom left , #df1a50, #341e59); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top right, #df1a50, #341e59); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top right , #df1a50, #341e59); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top right , #df1a50, #341e59); /* Standard syntax */
+  height:700px;
+}
+
+.hero-image{
+
+	position: relative;
+	right: -400px;
+	top:-300px;
+
+}
+
+.cta-container{
+
+	float: left;
+}
+
+.running-text{
+	font-family: 'Sanchez', serif;
+	z-index: 999;
+	margin-top:150px;
+}
+
+.typewriter h1 {
+	padding-top: 20px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.cta-button{
+	padding:15px 30px;
+	background-color:transparent;
+	border:none;
+	color: white;
+	border-radius: 30px;
+	margin-top:20px;
+	border:2px solid #fff;
+}
+
+
+/************************************SERVICES SECTION****************************************/
+.services{
+	padding-top: 150px;
+}
+.services-box{
+	padding-top: 150px;
+}
+.services-container{
+	background-color: #ebebeb;
+	margin-left: -25px;
+	padding:10px 10px;
+	margin-bottom: 50px;
+}
+.services-icon{
+	padding-top: 40px;
+	display:block;
+	margin:0 auto;
+}
+.services-title{
+	text-align: center;
+}
+
+
+/******************************************MORE ABOUT US SECTION**********************************/
+.more{
+	background-color: black;
+}
+.more-container{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.more-title{
+	padding-top: 20px;
+	
+}
+.more-text{
+	
+}
+
+.form-container{
+	background-color:#ffffff;
+	border-radius: 5px;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+
+
+/*******************************************************TESTIMONIAL SECTION*********************************************/
+.testimony{
+	padding-bottom:40px;
+	background-color:#ebebeb;
+}
+.testimonial-header{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+
+.testimony-image{
+	width: 100%;
+	height: auto;
+}
+.testimony-text{
+	padding-top:30px;
+}
+
+/**************************************************CLIENTS SECTION***************************************************/
+.clients-header{
+	padding-top:100px;
+	text-align: center;
+	padding-bottom:30px;
+}
