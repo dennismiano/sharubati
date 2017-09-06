@@ -8,6 +8,9 @@
 	color: #ffffff;
 }
 
+.sharubati-text{
+	font-family: 'Hind', sans-serif;
+}
 
 
 /******************************************HOME PAGE STYLING**************************************/
@@ -92,17 +95,33 @@
 
 
 /************************************SERVICES SECTION****************************************/
-.services{
+.services-header{
 	padding-top: 150px;
+	font-family: 'Sanchez', serif;
+	color: #341e59;
+	padding-right: 30px;
+}
+
+.border-bar{
+	width: 20%;
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 .services-box{
 	padding-top: 150px;
 }
 .services-container{
-	background-color: #ebebeb;
-	margin-left: -25px;
+	background-color: #fafbfb;
+	margin-left: -20px;
 	padding:10px 10px;
 	margin-bottom: 50px;
+	border:0.5px solid #ebebeb;
+	-webkit-box-shadow: 0px 0px 3px -1px rgba(184,184,184,1);
+-moz-box-shadow: 0px 0px 3px -1px rgba(184,184,184,1);
+box-shadow: 0px 0px 3px -1px rgba(184,184,184,1);
+}
+.coloured-border{
+
 }
 .services-icon{
 	padding-top: 40px;
@@ -111,6 +130,11 @@
 }
 .services-title{
 	text-align: center;
+	font-family: 'Sanchez', serif;
+}
+
+.services-text{
+	padding-right: 30px;
 }
 
 
