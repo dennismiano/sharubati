@@ -3,7 +3,7 @@
 <html >
     <head>
         <meta charset="utf-8">
-       
+       <meta name="google-site-verification" content="R_BSaue9eQNB5V2afpbkzB5lh1o5tModhuwtF_pLJuc" />
         
 
         <title>Sharubati</title>
@@ -14,6 +14,7 @@
        <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	   <script  src="/js/link.js"></script>
 
     </head>
   
