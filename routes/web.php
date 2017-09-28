@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+/*PAGE ROUTES*/
+Route::get('design-and-print', function () {
+    return view('design');
+});
