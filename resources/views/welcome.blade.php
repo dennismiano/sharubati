@@ -15,12 +15,23 @@
        <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	   <script src="/js/jquery-3.2.1.min.js"></script>
 	   <script src="/js/jquery.js"></script>
 	   <script  src="/js/ajax/get.js"></script>
 	   
 	   <script  src="/js/link.js"></script>
-	   
+        
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107155686-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments)};
+              gtag('js', new Date());
+
+              gtag('config', 'UA-107155686-1');
+            </script>
+
 
     </head>
   
@@ -271,3 +282,4 @@
 
     </body>
  </html> 
+
