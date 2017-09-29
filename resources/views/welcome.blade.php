@@ -9,12 +9,18 @@
         <title>Sharubati</title>
         <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{ URL::asset('/css/syde.css')}}" rel="stylesheet">
+		
 
         <!--fonts-->
        <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	   <script src="/js/jquery-3.2.1.min.js"></script>
+	   <script src="/js/jquery.js"></script>
+	   <script  src="/js/ajax/get.js"></script>
+	   
 	   <script  src="/js/link.js"></script>
+	   
 
     </head>
   
@@ -27,8 +33,8 @@
                     
                     <div class="pull-right">
                         <b><ul class="menu-links">
-                            <li class="links-list white">home</li>
-                            <li class="links-list white">solutions</li>
+                            <li class="links-list white"><a class="aj_get" href="/test">home</a></li>
+                            <li class="links-list white"><a class="aj_get" href="/test" >solutions</a></li>
                             <li class="links-list white">blog</li>
                             <li class="links-list white">team</li>
                         </ul></b>
@@ -57,7 +63,7 @@
 
 <!--SERVICES-->
        
-        <div class="row main-services">
+        <div class="row main-services result_get">
             <div class="container">
                 <div class="col-md-4">
                     <h3 class="services-header">We are the perfect blend of aesthetics and function. And  we say it in the solutions we give</h3>
@@ -260,7 +266,8 @@
             </div>
         </div>
 
-        </div>
+        
+		
 
     </body>
-<!-- </html> -->
+ </html> 
