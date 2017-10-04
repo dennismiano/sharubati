@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-//return first page
+//return welcome page
 Route::get('/', function () {
     return view('welcome');
 });
@@ -27,17 +27,38 @@ Route::post('/blog/comment', function () {
     return view('welcome');
 });
 
-
-
-//admin panel routes
-
-//return log in form for admin
-Route::get('/admin', function () {
+//return form
+Route::post('/project/form', function () {
     return view('welcome');
 });
-//return admin dashboard
 
-Route::get('/admin/dashboard', function () {
+Route::get('/test', function () {
+	$msg="hit here ";
+    return  $msg;
+});
+
+
+
+
+//BEGIN admin panel routes
+
+//admin log in returns admin form
+Route::get('/admin', 'admin@login_form');
+
+//admin check credentials for logging in
+Route::post('/admin/login', 'admin@login_admin');
+
+
+//returns admin dashboard
+Route::get('/admin/home', function () {
+    return view('welcome');
+});
+//blog admin post return blog post form
+Route::get('/blog/post/form', function () {
+    return view('welcome');
+});
+//save blogpost submitted by admin
+Route::post('/blog/post', function () {
     return view('welcome');
 });
 
