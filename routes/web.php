@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
 //blog user base view
 Route::get('/blog', function () {
     return view('welcome');
@@ -63,3 +64,12 @@ Route::post('/blog/post', function () {
 });
 
 //end admin panel routes
+
+
+
+
+/*PAGE ROUTES*/
+Route::get('design-and-print', function () {
+    return view('design');
+});
+

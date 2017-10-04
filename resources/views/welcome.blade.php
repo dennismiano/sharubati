@@ -65,7 +65,10 @@
                     </div>
 
                     <div class="col-md-7">
+                        <img class="hero-image img-responsive" src = "{{URL::asset('/images/syde-images/home-image.png')}}" alt = "computer with design elements">
+                        <!--
                          <img class="hero-image img-responsive" src = "{{ URL::asset('/images/syde-images/home-image.png')}}" alt = "computer with design elements">
+                         -->
                     </div>
 
                 </div>
@@ -92,7 +95,7 @@
                                 <h4 class="services-title">DESIGN</h4>
                                 <p class="sharubati-text">If you are looking for that high quality work that makes your business stand out and gives your brand an appealing identity, we are the team you need;
                                     <ul>
-                                        <li>Advertising</li>
+                                        <li></li>
                                         <li>Branding</li>
                                         <li>Print</li>
                                     </ul>
@@ -124,6 +127,7 @@
                                         <li>SEO</li>
                                         <li>Social Media Marketing</li>
                                         <li>Predictive Analysis</li>
+                                        <li>Advertising</li>
                                     </ul>
                                 </p>
                         </div>
