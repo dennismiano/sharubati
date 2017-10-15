@@ -14,6 +14,20 @@
 
 .sharubati-title{
 	font-family: 'Sanchez', serif;
+	padding-bottom:10px;
+}
+
+.sharubati-subtitle{
+	font-family: 'Sanchez', serif;
+	padding-top: 10px;
+	padding-bottom:5px;
+}
+.gray-text{
+	color:#939598;
+}
+
+.align-center{
+	text-align: center;
 }
 
 
@@ -122,7 +136,7 @@
 	background-color: #fafbfb;
 	margin-left: -20px;
 	padding:10px 10px;
-	margin-bottom: 50px;
+	margin-bottom: 50px; 
 	border:0.5px solid #ebebeb;
 	-webkit-box-shadow: 0px 0px 3px -1px rgba(184,184,184,1);
 -moz-box-shadow: 0px 0px 3px -1px rgba(184,184,184,1);
@@ -204,6 +218,19 @@ box-shadow: 0px 0px 9px -1px rgba(212,212,212,1);
 	border:none;
 	color: white;
 	border-radius: 30px;
+}
+
+.sharubati-button{
+	padding:10px 20px;
+	background: red; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left , #ca364f, #44425f); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #ca364f, #44425f); /* For Opera 11.1 to 12.0 */
+ 	background: -moz-linear-gradient(right , #ca364f, #44425f); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right , #ca364f, #44425f); /* Standard syntax */
+	border:none;
+	color: white;
+	border-radius: 30px;
+	margin-top: 20px;
 }
 
 .no-border{
@@ -302,19 +329,185 @@ box-shadow: 0px 0px 9px -1px rgba(212,212,212,1);
 	height:auto;
 	float:left;
 	margin-left: -50px;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
+
+/*************************************************PAGES CONTENT******************************************************/
 .pages-container{
 	margin-top: 70px;
+	padding-bottom: 50px;
 }
 
-.portfolio-image{
-	margin-left: -15px;
-	margin-bottom: 10px;
-	border-right: 20px solid #fff; 
+.padding-text-right{
+	padding-right: 100px;
 }
 
 .pages-form-container{
 	background-color: #f2f2f2;
+}
+
+.page-content-title{
+	padding-bottom: 15px;
+}
+
+
+
+
+/****************************************BRANDING PAGE******************************************************************/
+.projects-portfolio{
+	background-color: #ebebeb;
+	margin-left: -30px;
+	margin-right: -30px;
+	padding-bottom: 70px;
+}
+
+.projects-container{
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+.projects-header{
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+.project-thumbnail{
+	width: 100%;
+	height: auto;
+	margin-left: -30px;
+}
+.project-header{
+	padding-top: 50px;
+}
+.project-text{
+	padding-top: 20px;
+}
+
+
+
+/*************************************************************SUBSCRIBER FORM************************************************/
+.subscribe{
+
+	background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left , #ca364f, #44425f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ca364f, #44425f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right , #ca364f, #44425f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right , #ca364f, #44425f); /* Standard syntax */
+
+  	margin-left: -30px;
+	margin-right: -30px;
+	padding-top: 70px;
+	padding-bottom: 50px;
+
+}
+
+.subscriber-form{
+	background-color: #ffffff;
+}
+.subcriber-statement{
+	padding-bottom: 20px;
+}
+.subcriber-email{
+	width: 80%;
+	float: left;
+}
+
+
+/*****************************************************FOOTER STYLING*********************************************/
+.footer{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f6f6f6;
+}
+
+.footer-text{
+	padding-right: 100px;
+}
+
+
+
+
+
+/*************************************************WEB DESIGN & DEVELOPMENT PAGE*******************************/
+.web-is-big-img{
+	width: 100%;
+	height: auto;
+}
+.web-is-big-img-title{
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+
+.web-services{
+	background-color: #ebebeb;
+	margin-left: -30px;
+	margin-right: -30px;
+	padding-bottom:100px;
+	padding-top: 50px;
+}
+
+.web-services-holder{
+
+
+}
+
+.web-service{
+	background-color: #fff;
+	border-right: 2px solid #e6e7e8;
+	border-bottom: 2px solid #e6e7e8;
+	margin-bottom:0;
+}
+
+.web-service-icon{
+	padding-top: 30px;
+	display:block;
+	margin:0 auto;
+}
+
+.web-services-subtitle{
+	text-align: center;
+	padding-top: 0;
+}
+
+.web-services-text{
+	padding-right: 10px;
+	padding-left:10px;
+	padding-bottom: 20px;
+}
+
+.web-projects{
+	margin-left: -30px;
+	margin-right: -30px;
+	background-color: #f6f6f6;
+	padding-bottom: 100px;
+}
+
+
+/*******************************DEVELOPMENT PAGE**********************************/
+
+.industries{
+	margin-left: -30px;
+	margin-right: -30px;
+	background-color: #ebebeb;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.industry-icon{
+	max-width: 100px;
+	height: auto;
+	display:block;
+	margin:0 auto;
+	margin-top: 50px;
+}
+
+
+
+/************************************DIGITAL MARKETING PAGE*********************************/
+.content-marketing{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.digital-service-icon{
+	width:100%;
+	height: auto;
 }
