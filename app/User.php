@@ -29,4 +29,7 @@ class User extends Authenticatable
 	public function admin(){
 		return $this->hasOne('App\admin');
 	}
+	public function files(){
+		return $this->hasMany('App\files','user_id');
+	}
 }
