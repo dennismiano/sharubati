@@ -10,6 +10,7 @@ $(document).ready( function(){
 		
 		var d= new FormData(this);
 		$.ajax({
+			async:true,
 			type:"POST",
 			url:"/admin/login",
 			contentType:false,

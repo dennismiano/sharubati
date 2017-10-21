@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\admin as admins;
+use Illuminate\Support\Facades\Auth;
 
 class admin extends Controller
 {
@@ -16,16 +17,14 @@ class admin extends Controller
 	//authenticate admin
 	public function  login_admin( Request $request ){
 		if( $request->isMethod("POST")  ){
-			$em=$request->email;
-			$pass=$request->pass;
-			//check whether email exists
-			$check=User::where("email",$em)->first();
-			//$ch_ad=admins::where("user_id",$check->id)->first();
-			/*if($check && $ch_ad){
-				//return redirect("/admin/home");
-			}*/
-			$f=$check;
-			return  $f;
+			if(Auth::guard('admin')->attempt(['email'=>$request->email,'password'=>$request->password])){
+				$df="Hit Here";
+				return $df;
+				
+			}
+			else{
+				return error(404);
+			}
 			
 			
 			

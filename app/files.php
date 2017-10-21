@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class files extends Model
 {
+	protected $table="files";
     //mass assign
 	protected $fillable=['file_type_id','file_name','user_id'];
 	

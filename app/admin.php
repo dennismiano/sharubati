@@ -7,9 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class admin extends Model
 {
     //mass assign
-	protected $fillable=["user_id"];
-	public function user(){
+	protected $fillable = [
+        'name', 'email', 'password',
+    ];
+	/*public function user(){
 		return $this->belongsTo('App\User');
 		
-	}
+	}*/
 }
