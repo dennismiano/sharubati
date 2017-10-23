@@ -5,7 +5,7 @@
 <div class="row pages-header">
 	<div class="container">
 		<div class="col-md-4">
-			<h1 class="pages-header-title sharubati-title"><b>Branding</b></h1>
+			<h1 class="pages-header-title sharubati-title">Branding </br><b>& Advertising</b></h1>
 		</div>
 
 		<div class="col-md-4 header-article-container pull-right">

@@ -1,60 +1,26 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-<html >
-    <head>
-        <meta charset="utf-8">
-       
-        
 
-        <title>Sharubati</title>
-        <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
-        <link href="{{ URL::asset('/css/syde.css')}}" rel="stylesheet">
+@extends('layouts.client-master')
 
-        <!--fonts-->
-       <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
-       <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
-       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    </head>
-  
-    <body>
+@section('content')
 
 <!--ABOVE FOLD-->
         <div class="container-fluid above-fold">
-            <div class="row syde-header">
-                    <img class="syde-logo" src = "{{ URL::asset('/images/syde-images/sharubati-logo.png')}}" alt = "First slide">
-                    
-                    <div class="pull-right">
-                        <b><ul class="menu-links">
-                            <li class="links-list white">home</li>
-                            <li class="links-list white">solutions</li>
-                            <li class="links-list white">blog</li>
-                            <li class="links-list white">team</li>
-                        </ul></b>
-                    </div>
-            </div>
 
                 <div class="row">
-                    
-                    <div class="cta-container col-md-5"> 
+                 
 
-                        <div class="">
-                            <h1 class="running-text white">Small Team <br> Custom Solutions</h1>
+                        <div class="hero-text-container">
+                            <h1 class="hero-title align-center red">We are building a whole new <b>Digital World.</b></h1>
+                            <h1 class="hero-title align-center blue"><b>For Businesses</b></h1>
                         </div>
 
-                        <button class="cta-button"><b>Lets talk about your project </b></button>
+                        <div class="text-center">
+                            <button class="hero-button">Lets talk about your project</button>
+                        </div>
                     </div>
 
-                    <div class="col-md-7">
-                        <img class="hero-image img-responsive" src = "{{URL::asset('/images/syde-images/home-image.png')}}" alt = "computer with design elements">
-                        <!--
-                         <img class="hero-image img-responsive" src = "{{ URL::asset('/images/syde-images/home-image.png')}}" alt = "computer with design elements">
-                         -->
-                    </div>
 
                 </div>
-
-            </div>
 
 
 <!--SERVICES-->
@@ -220,50 +186,7 @@
             </div>
         </div>
 
-        <div class="row footer-section">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="footerform-container">
-                    
-                    <div class="col-md-6 form-container">
-                                <div class="row form-header">
-                                    <h2 class="form-title sharubati-title white">Still got a question?</h2>
-                                </div>
-
-                                <div class="row form-body">
-                                     <form>
-                                      <div class="form-group">
-                                       <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border" id="project-category" placeholder="Your email">
-                                      </div>
-                                      
-                                      <div class="form-group">
-                                       <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border" id="budget" placeholder="Your phone number">
-                                      </div>
-                                      
-                                      <div class="form-group">
-                                       <!-- <label for="project-category">What is your project about?</label>-->
-                                         <textarea class="no-border form-control" rows="3" id="message" name="message" placeholder="Your message"></textarea>
-                                      </div>
-
-                                      <button type="submit" class="form-button pull-right"><b>A few more details</b><i class="fa fa-arrow-right"></i></button>
-                                    </form>
-                                </div>
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <h1 class="sharubati-title">We are social</h1>
-                        <img class="border-bar img-responsive" src = "{{ URL::asset('/images/syde-images/border-bar.png')}}" alt = "computer with design elements">
-                        <p class="sharubati-text">Every now and then we share valuable tips and insights sorrounding our work. We think it might be helpful to your business as well. So like our social media pages and we’ll keep you in the know.</p>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-        </div>
-
-    </body>
+        
+@include('layouts.client-footer')
+@endsection
 <!-- </html> -->

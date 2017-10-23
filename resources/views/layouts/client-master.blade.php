@@ -24,9 +24,9 @@
             <div class="row sharubati-header">
 
                 <div class="container">
-                    <img class="sharubati-thumbnail-logo" src = "{{ URL::asset('/images/syde-images/sharubati-thumbnail.gif')}}" alt = "logo">
+                    <img class="sharubati-logo" src = "{{ URL::asset('/images/syde-images/sharubati-logo-02.png')}}" alt = "logo">
 
-                    <div class="pull-right">
+                    <div class="pull-right menus">
                         <b><ul class="menu-links">
                             <li class="links-list white">home</li>
                             <li class="links-list white">solutions</li>
