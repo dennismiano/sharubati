@@ -5,25 +5,26 @@
 <div class="row pages-header">
 	<div class="container">
 		<div class="col-md-4">
-			<h1 class="pages-header-title sharubati-title">Design</br><b>& Print </b></h1>
+			<h1 class="pages-header-title sharubati-title">Branding </br><b>& Advertising</b></h1>
 		</div>
 
 		<div class="col-md-4 header-article-container pull-right">
 			<img class="speech-mark" src = "{{ URL::asset('/images/syde-images/quotes.png')}}" alt = "speech marks">
-			<h3 class="sharubati-title">Unfortunately in business, customers judge a book by the cover. If they dont like how it looks, then they dont like it at all.</h3>
+			<h3 class="sharubati-title">Brand is the story behind your product or business. Its the value you propose to your customers. And we help you tell a better story.</h3>
 		</div>
 	</div>
 </div>
 
+
+
+<!--PAGE BODY STARTS HERE-->
+
 <div class="row pages-content">
 	<div class="container pages-container">
 		<div class="col-md-8">
-			<h3 class="page-content-title padding-text-right sharubati-title">We take a lot of pride in seeing a project through to completion, from just a mere idea to execution. That way, we can guarantee the quality of the final output.</h3>
+			<h3 class="page-content-title padding-text-right sharubati-title"><i>We believe a brand goes beyond crafting a unique identity, but we also recognize that identity is the first way to differentiate from the pack, it sets a direction, a guide that helps avoid ambiguity. </i></h3>
 
-			<p class="page-text padding-text-right sharubati-text">Thats why we have a streamlined design process that ensures your project brief is executed within timelines and a pool of creatives to bring that idea to life.
-
-			And whats more, you do not have to worry about the printer getting your design wrong, because we have a network of industry contacts, that help clients save time and money by allowing print professionals to handle the type of printing they are most competitive. It also allows us to become your single point of contact for the entire project.</p>
-
+			<p class="page-text padding-text-right sharubati-title">Can you imagine how marketing used to be when brands never existed? There was no way for customers to identify a product they had desired. Gaining and retaining customers must have neen difficult. But since the evolution of brands, you can tell the story behind your product or business and why you are different. And we help you communicate that in a visually appealing way. </p>
 
 		</div>
 
@@ -54,10 +55,10 @@
                                     </form>
                                 </div>
             </div>
-		</div>
-
 	</div>
+
 </div>
+
 
 <div class="row projects-portfolio">
 	
@@ -112,6 +113,5 @@
 
 	</div>
 </div>
-
 @include('layouts.client-footer')
 @endsection

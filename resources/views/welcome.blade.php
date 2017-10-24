@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <html >
@@ -10,12 +11,12 @@
         <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{ URL::asset('/css/syde.css')}}" rel="stylesheet">
 		
+=======
+>>>>>>> design
 
-        <!--fonts-->
-       <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
-       <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
-       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+@extends('layouts.client-master')
 
+<<<<<<< HEAD
 	   <script src="/js/jquery-3.2.1.min.js"></script>
 	   <script src="/js/jquery.js"></script>
 	   <script  src="/js/ajax/get.js"></script>
@@ -52,28 +53,28 @@
                         </ul></b>
                     </div>
             </div>
+=======
+@section('content')
+
+<!--ABOVE FOLD-->
+        <div class="container-fluid above-fold">
+>>>>>>> design
 
                 <div class="row">
-                    
-                    <div class="cta-container col-md-5"> 
+                 
 
-                        <div class="">
-                            <h1 class="running-text white">Small Team <br> Custom Solutions</h1>
+                        <div class="hero-text-container">
+                            <h1 class="hero-title align-center red">We are building a whole new <b>Digital World.</b></h1>
+                            <h1 class="hero-title align-center blue"><b>For Businesses</b></h1>
                         </div>
 
-                        <button class="cta-button"><b>Lets talk about your project </b></button>
+                        <div class="text-center">
+                            <button class="hero-button">Lets talk about your project</button>
+                        </div>
                     </div>
 
-                    <div class="col-md-7">
-                        <img class="hero-image img-responsive" src = "{{URL::asset('/images/syde-images/home-image.png')}}" alt = "computer with design elements">
-                        <!--
-                         <img class="hero-image img-responsive" src = "{{ URL::asset('/images/syde-images/home-image.png')}}" alt = "computer with design elements">
-                         -->
-                    </div>
 
                 </div>
-
-            </div>
 
 
 <!--SERVICES-->
@@ -239,6 +240,7 @@
             </div>
         </div>
 
+<<<<<<< HEAD
         <div class="row footer-section">
             <div class="col-md-8 col-md-offset-2">
                 <div class="footerform-container">
@@ -288,3 +290,9 @@
     </body>
  </html> 
 
+=======
+        
+@include('layouts.client-footer')
+@endsection
+<!-- </html> -->
+>>>>>>> design

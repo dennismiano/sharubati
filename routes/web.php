@@ -68,8 +68,27 @@ Route::post('/blog/post', function () {
 
 
 
-/*PAGE ROUTES*/
+/**************************************************PAGE ROUTES**********************************/
 Route::get('design-and-print', function () {
     return view('design');
+});
+
+
+
+Route::get('branding', function () {
+    return view('branding');
+});
+
+
+Route::get('web', function () {
+    return view('web-design');
+});
+
+Route::get('development', function () {
+    return view('development');
+});
+
+Route::get('digital-marketing', function () {
+    return view('digital-marketing');
 });
 

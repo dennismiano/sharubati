@@ -1,0 +1,33 @@
+$(document).ready( function(){
+	$.ajaxSetup({
+			headers:{
+					'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')
+					}
+	});
+	$(".login_admin").on("submit",function(e){
+		e.preventDefault();
+		e.stopImmediatePropagation();
+		
+		var d= new FormData(this);
+		$.ajax({
+			async:true,
+			type:"POST",
+			url:"/admin/login",
+			contentType:false,
+			processData:false,
+			data:d,
+			error:function(data){
+				$("body").empty().html(data);
+			},
+			success:function(data){
+				$("body").empty().html(data);
+				
+			}
+			
+			
+		});
+		
+		
+	}   );
+	
+}  );
