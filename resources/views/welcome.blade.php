@@ -268,5 +268,5 @@
 
 
         
-<!-- @include('layouts.client-footer') -->
+
 
