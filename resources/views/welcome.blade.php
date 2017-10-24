@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <html >
@@ -10,14 +11,7 @@
         <title>Sharubati</title>
         <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{ URL::asset('/css/syde.css')}}" rel="stylesheet">
-		
-=======
->>>>>>> design
-
-@extends('layouts.client-master')
-
-<<<<<<< HEAD
-	   <script src="/js/jquery-3.2.1.min.js"></script>
+		<script src="/js/jquery-3.2.1.min.js"></script>
 	   <script src="/js/jquery.js"></script>
 	   <script  src="/js/ajax/get.js"></script>
 	   
