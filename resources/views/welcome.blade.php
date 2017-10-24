@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
-<html >
+
     <head>
         <meta charset="utf-8">
-      <meta name="google-site-verification" content="n9swYqcSP0lnLuQubAo4b3psuDZ2J19iaaGJndIcBpM" />
+        <meta name="google-site-verification" content="n9swYqcSP0lnLuQubAo4b3psuDZ2J19iaaGJndIcBpM" />
         
 
         <title>Sharubati</title>
@@ -33,26 +31,11 @@
   
     <body>
 
-<!--ABOVE FOLD-->
-        <div class="container-fluid above-fold">
-            <div class="row syde-header">
-                    <img class="syde-logo" src = "{{ URL::asset('/images/syde-images/sharubati-logo.png')}}" alt = "First slide">
-                    
-                    <div class="pull-right">
-                        <b><ul class="menu-links">
-                            <li class="links-list white"><a class="aj_get" href="/test">home</a></li>
-                            <li class="links-list white"><a class="aj_get" href="/test" >solutions</a></li>
-                            <li class="links-list white">blog</li>
-                            <li class="links-list white">team</li>
-                        </ul></b>
-                    </div>
-            </div>
-=======
-@section('content')
+
 
 <!--ABOVE FOLD-->
         <div class="container-fluid above-fold">
->>>>>>> design
+
 
                 <div class="row">
                  
@@ -234,7 +217,6 @@
             </div>
         </div>
 
-<<<<<<< HEAD
         <div class="row footer-section">
             <div class="col-md-8 col-md-offset-2">
                 <div class="footerform-container">
@@ -284,9 +266,7 @@
     </body>
  </html> 
 
-=======
+
         
-@include('layouts.client-footer')
-@endsection
-<!-- </html> -->
->>>>>>> design
+<!-- @include('layouts.client-footer') -->
+
