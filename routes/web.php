@@ -16,9 +16,8 @@ Route::get('/', function () {
 });
 
 //blog user base view
-Route::get('/blog', function () {
-    return view('welcome');
-});
+Route::get('/blog',"blog@view_post");
+
 //blog user comment form
 Route::get('/blog/comment/form', function () {
     return view('welcome');
@@ -33,10 +32,7 @@ Route::post('/project/form', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
-	$msg="hit here ";
-    return  $msg;
-});
+Route::get('/test', 'adminz@ser');
 
 
 
@@ -44,20 +40,18 @@ Route::get('/test', function () {
 //BEGIN admin panel routes
 
 //admin log in returns admin form
-Route::get('/admin', 'admin@login_form');
+Route::get('/admin', 'adminz@login_form');
 
 //admin check credentials for logging in
-Route::post('/admin/login', 'admin@login_admin');
+Route::post('/admin/login', 'adminz@login_admin');
 
 
 //returns admin dashboard
 Route::get('/admin/home', function () {
-    return view('welcome');
+    return view('admin.admin_home');
 });
 //blog admin post return blog post form
-Route::get('/blog/post/form', function () {
-    return view('welcome');
-});
+Route::get('/blog/post/form', 'blog@view_post');
 //save blogpost submitted by admin
 Route::post('/blog/post', function () {
     return view('welcome');

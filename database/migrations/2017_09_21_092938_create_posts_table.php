@@ -13,6 +13,15 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
+		Schema::create('admins', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->rememberToken();
+            $table->timestamps();
+        });
+		
 		Schema::create('file_types', function (Blueprint $table) {
             $table->increments('id');
 			$table->string("name");
@@ -24,8 +33,8 @@ class CreatePostsTable extends Migration
 			$table->integer("file_type_id")->unsigned();
 			$table->foreign("file_type_id")->references("id")->on("file_types");
 			$table->text('file_name');
-			$table->integer("user_id")->unsigned();
-			$table->foreign("user_id")->references("id")->on("users");
+			$table->integer("admin_id")->unsigned();
+			$table->foreign("admin_id")->references("id")->on("admins");
 		    $table->timestamps();
         });
 		
@@ -45,7 +54,7 @@ class CreatePostsTable extends Migration
 			$table->integer("post_id")->unsigned();
 			$table->foreign("post_id")->references("id")->on("posts");
 			$table->text("body");
-			$table->integer("file_id")->unsigned();
+			$table->integer("file_id")->unsigned()->nullable();
 			$table->foreign("file_id")->references("id")->on("files");
 			$table->timestamps();
         });
