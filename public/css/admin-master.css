@@ -1,0 +1,24 @@
+.admin-panel{
+	height:50px;
+	width:100%;
+	background: red; 
+  	background: -webkit-linear-gradient(left ,#ca364f, #44425f);
+  	background: -o-linear-gradient(right, #ca364f, #44425f); 
+  	background: -moz-linear-gradient(right , #ca364f, #44425f);
+  	background: linear-gradient(to right , #ca364f, #44425f);
+}
+
+.admin-panel-icon{
+	padding-right: 7px;
+}
+.admin-content{
+	background-color: #ebebeb;
+}
+
+
+.lead-holder{
+	background-color: #fff;
+	padding: 10px 10px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}

@@ -34,4 +34,12 @@ class admin extends Controller
 		}
 	    
 	}
+	public function er(){
+		$ry=admins::create(["name"=>"den","email"=>"12@em.cm","password"=>bcrypt(12345)]);
+		if($ry){
+			$rt="qwerty";
+			return $rt;
+
+		}
+}
 }

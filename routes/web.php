@@ -63,6 +63,9 @@ Route::post('/blog/post', function () {
     return view('welcome');
 });
 
+Route::get('/admin-home', function () {
+    return view('/admin/admin_home');
+});
 //end admin panel routes
 
 
@@ -78,6 +81,7 @@ Route::get('design-and-print', function () {
 Route::get('branding', function () {
     return view('branding');
 });
+Route::get('test', "admin@er");
 
 
 Route::get('web', function () {

@@ -3,8 +3,9 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class admin extends Model
+class admin extends Authenticatable
 {
     //mass assign
 	protected $fillable = [

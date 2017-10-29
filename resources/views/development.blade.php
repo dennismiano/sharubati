@@ -66,8 +66,7 @@
                                       <button type="submit" class="form-button pull-right"><b>A few more details</b><i class="fa fa-arrow-right"></i></button>
                                     </form>
                                 </div>
-            </div>
-	</div>
+ </div>
 
 </div>
 

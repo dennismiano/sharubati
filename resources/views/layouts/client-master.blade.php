@@ -12,6 +12,7 @@
 
         <!--fonts-->
        <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -24,7 +25,7 @@
             <div class="row sharubati-header">
 
                 <div class="container">
-                    <img class="sharubati-logo" src = "{{ URL::asset('/images/syde-images/sharubati-logo-02.png')}}" alt = "logo">
+                    <img class="sharubati-logo" src = "{{ URL::asset('/images/syde-images/sharubati-logo.png')}}" alt = "logo">
 
                     <div class="pull-right menus">
                         <b><ul class="menu-links">

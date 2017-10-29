@@ -34,14 +34,29 @@
 
 
 <!--ABOVE FOLD-->
-        <div class="container-fluid above-fold">
+        <div class="row sharubati-header">
 
+                <div class="container">
+                    <img class="sharubati-logo" src = "{{ URL::asset('/images/syde-images/sharubati-logo.png')}}" alt = "logo">
+
+                    <div class="pull-right menus">
+                        <b><ul class="menu-links">
+                            <li class="links-list white">home</li>
+                            <li class="links-list white">solutions</li>
+                            <li class="links-list white">blog</li>
+                            <li class="links-list white">team</li>
+                        </ul></b>
+                    </div>
+                </div>
+            </div>
+            
+        <div class="container-fluid above-fold">
 
                 <div class="row">
                  
 
                         <div class="hero-text-container">
-                            <h1 class="hero-title align-center red">We are building a whole new <b>Digital World.</b></h1>
+                            <h1 class="hero-title align-center blue">We are building a whole new <b>Digital World.</b></h1>
                             <h1 class="hero-title align-center blue"><b>For Businesses</b></h1>
                         </div>
 
@@ -70,12 +85,11 @@
                         <div class="col-md-4">
                             <div class="services-container coloured-border">
                                 <img class="services-icon img-responsive" src = "{{ URL::asset('/images/syde-images/design-icon.png')}}" alt = "design-icon">
-                                <h4 class="services-title">DESIGN</h4>
+                                <h4 class="services-title"><b>DESIGN</b></h4>
                                 <p class="sharubati-text">If you are looking for that high quality work that makes your business stand out and gives your brand an appealing identity, we are the team you need;
                                     <ul>
-                                        <li></li>
-                                        <li>Branding</li>
-                                        <li>Print</li>
+                                        <li class="sharubati-text"><a href="branding">Branding</a></li>
+                                        <li class="sharubati-text"><a href="design-and-print">Print</a></li>
                                     </ul>
                                 </p>
                             </div>
@@ -84,12 +98,11 @@
                         <div class="col-md-4">
                             <div class="services-container">
                                 <img class="services-icon img-responsive" src = "{{ URL::asset('/images/syde-images/devops-icon.png')}}" alt = "devops-icon">
-                                <h4 class="services-title">DEVELOPMENT</h4>
+                                <h4 class="services-title"><b>DEVELOPMENT</b></h4>
                                 <p class="sharubati-text">Whether its a website, a web application or a custom business software, we have a professional team of designers and developers  that collaborates to deliver solutions that are functional and scalable.
                                     <ul>
-                                        <li>Web systems</li>
-                                        <li>Custom Software</li>
-                                        <li>Dev-ops</li>
+                                        <li class="sharubati-text"><a href="web">Web systems</a></li>
+                                        <li class="sharubati-text"><a href="development">Custom Enterprise Software</a></li>
                                     </ul>
 
                                 </p>
@@ -99,13 +112,12 @@
                         <div class="col-md-4">
                             <div class="services-container">
                                 <img class="services-icon img-responsive" src = "{{ URL::asset('/images/syde-images/strategy-icon.png')}}" alt = "strategy-icon">
-                                <h4 class="services-title">STRATEGY</h4>
+                                <h4 class="services-title"><b>STRATEGY</b></h4>
                                 <p class="sharubati-text">Data driven strategy to increase leads and conversions. We use a combinations of tools and media, a deep insight into buyer behavior to inform your digital options
                                     <ul>
-                                        <li>SEO</li>
-                                        <li>Social Media Marketing</li>
-                                        <li>Predictive Analysis</li>
-                                        <li>Advertising</li>
+                                        <li class="sharubati-text"><a href="digital-marketing">Content Marketing</a></li>
+                                        <li class="sharubati-text"><a href="digital-marketing">Social Media Marketing</a></li>
+                                        <li class="sharubati-text"><a href="digital-marketing">Search Marketing (SEO, SEM)</a></li>
                                     </ul>
                                 </p>
                         </div>
@@ -118,16 +130,19 @@
 <!--MORE ABOUT US-->
         <div class="container-fluid more">
             <div class="container">
-                <div class="col-md-10 col-md-offset-1 more-container">
+                <div class="more-container">
                     <div class="row">
-                        <div class="col-md-6 text-container">
-                            <h2 class="more-title white sharubati-title">You can trust us to get the job done. </br> Our solutions are not a cost, they are an investment.</h2>
-                            <p class="white more-text sharubati-text">We are consciuos of cost and deadlines. We understand how much value you expect for your money and thats why  are backed by a creative and professional team that will see to it that you get just that.
+                        <div class="col-md-8 text-container">
+
+                            <img class="img-responsive" src = "{{ URL::asset('/images/syde-images/designer-desk.png')}}" alt = "designer-desk">
+
+                            <h2 class="more-title blue sharubati-title">You can <b>trust us</b> to get the <b>job done.</b></br> Our solutions are not a cost, they are an <b>investment.</b></h2>
+                            <p class="gray-text more-text sharubati-text">We are consciuos of cost and deadlines. We understand how much value you expect for your money and thats why  are backed by a creative and professional team that will see to it that you get just that.
                             So trust us with your job, we have designers, developers and marketers to ensure your job is given an all round perspective.</p>
                         </div>
 
-                        <div class="col-md-6 form-container">
-
+                        <div class="col-md-4 pages-form-container">
+        
                                 <div class="row form-header">
                                     <h2 class="form-title sharubati-title white">Lets Talk Business</h2>
                                 </div>
@@ -136,23 +151,24 @@
                                      <form>
                                       <div class="form-group">
                                        <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border" id="project-category" placeholder="What is your project about?">
+                                        <input type="text" class="form-control no-border sharubati-text" id="project-category" placeholder="What is your project about?">
                                       </div>
                                       
                                       <div class="form-group">
                                        <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border" id="budget" placeholder="Do you have a predetermined budget">
+                                        <input type="text" class="form-control no-border sharubati-text" id="budget" placeholder="Do you have a bugdet?">
                                       </div>
                                       
                                       <div class="form-group">
                                        <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border" id="project-category" placeholder="What about a deadline?">
+                                        <input type="text" class="form-control no-border sharubati-text" id="budget" placeholder="What about a deadline?">
                                       </div>
 
-                                      <button type="submit" class="form-button pull-right"><b>A few more details</b><i class="fa fa-arrow-right"></i></button>
+                                      <button type="submit" class="sharubati-button sharubati-title pull-right"><b>A few more details</b><i class="fa fa-arrow-right"></i></button>
                                     </form>
                                 </div>
                         </div>
+
                 </div>
             </div>
         </div>
