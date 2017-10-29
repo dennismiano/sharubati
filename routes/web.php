@@ -60,6 +60,19 @@ Route::post('/blog/post', function () {
 Route::get('/admin-home', function () {
     return view('/admin/admin_home');
 });
+
+//ADMIN ROUTES FOR TESTING TO BE DELETED
+Route::get('/subscribers', function () {
+    return view('/admin/subscribers');
+});
+
+Route::get('/messages', function () {
+    return view('/admin/messages');
+});
+
+Route::get('/projects', function () {
+    return view('/admin/projects');
+});
 //end admin panel routes
 
 

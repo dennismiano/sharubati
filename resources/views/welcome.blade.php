@@ -9,6 +9,7 @@
         <title>Sharubati</title>
         <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{ URL::asset('/css/syde.css')}}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Sanchez" rel="stylesheet">
 		<script src="/js/jquery-3.2.1.min.js"></script>
 	   <script src="/js/jquery.js"></script>
 	   <script  src="/js/ajax/get.js"></script>
@@ -184,7 +185,7 @@
                     </div>
 
                     <div class="col-md-9">
-                        <p class="testimony-text">
+                        <p class="testimony-text sharubati-text">
                             When i was setting up, i needed a consultant who would help me appropiately position the brand and give it that unique identity.  SYDE brought the business brand to life and implemented an effective way to gain awareness fast and i was amazed at how easily we hit our set threshold.<br><b>~ Oliver, Autokey.</b>
                         </p>
                     </div>
