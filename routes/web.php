@@ -47,15 +47,11 @@ Route::post('/admin/login', 'adminz@login_admin');
 
 
 //returns admin dashboard
-Route::get('/admin/home', function () {
-    return view('admin.admin_home');
-});
+Route::get('/admin/home', "adminz@homess");
 //blog admin post return blog post form
 Route::get('/blog/post/form', 'blog@view_post');
 //save blogpost submitted by admin
-Route::post('/blog/post', function () {
-    return view('welcome');
-});
+Route::post('/blog/post', 'blog@create_post');
 
 Route::get('/admin-home', function () {
     return view('/admin/admin_home');

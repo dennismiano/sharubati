@@ -20,7 +20,8 @@ $(document).ready( function(){
 				$("body").empty().html(data);
 			},
 			success:function(data){
-				$("body").empty().html(data);
+				$(".login_form").remove();
+				$("body").html(data);
 				
 			}
 			
@@ -29,5 +30,52 @@ $(document).ready( function(){
 		
 		
 	}   );
+	$(".blog").on("click", function(e){
+		e.preventDefault();
+		e.stopImmediatePropagation();
+		//alert("hit");
+		$.ajax({
+			async:true,
+			type:"GET",
+			url:"/blog",
+			error:function(data){
+				$("body").empty().html(data);
+			},
+			success:function(data){
+				$(".admin-content").empty();
+				$(".admin-content").html(data);
+				//alert(data);
+				
+			}
+			
+			
+		});
+		
+	}  );
+	$(".container-fluid").on("submit", "",function(e){
+		e.preventDefault();
+		e.stopImmediatePropagation();
+		alert("hit");
+		var da=new FormData(this);
+		/**$.ajax({
+			async:true,
+			type:"POST",
+			url:"/blog/post",
+			data:da,
+			contentType:false,
+			processData:false,
+			error:function(data){
+				$("body").empty().html(data);
+			},
+			success:function(data){
+				$(".blog_form")[0].clear();
+				alert('success');
+				
+			}
+			
+			
+		});*/
+		
+	}  );
 	
 }  );

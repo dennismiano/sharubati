@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 class adminz extends Controller
 {
 	public function homess(){
-		return view('admin.admin_home');
+		return view('admin.admin-master');
 	}
     //return form for admin login
 	public function  login_form(){
