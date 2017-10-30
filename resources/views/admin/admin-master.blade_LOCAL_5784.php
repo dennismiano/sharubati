@@ -8,7 +8,6 @@
         <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{ URL::asset('/css/syde.css')}}" rel="stylesheet">
         <link href="{{ URL::asset('/css/admin-master.css')}}" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway|Sanchez" rel="stylesheet">
 		<script src="/js/jquery-3.2.1.min.js"></script>
 	   <script src="/js/jquery.js"></script>
 	   <script  src="/js/ajax/get.js"></script>
@@ -26,28 +25,15 @@
             		<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/admin-menu.png')}}" alt = "logo">
 
             		<div class="admin-panel-links pull-right">
+            			<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/leads-01.png')}}" alt = "logo">
 
-            			
-            			<a href="/admin-home">
-            				<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/leads-01.png')}}" alt = "logo">
-            			</a>
+            			<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/messages-01.png')}}" alt = "logo">
 
-            			<a href="/messages">
-            				<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/messages-01.png')}}" alt = "logo">
-            			</a>
+            			<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/subscribers-01.png')}}" alt = "logo">
 
-            			<a href="/subscribers">
-            				<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/subscribers-01.png')}}" alt = "logo">
-            			</a>
+            			<img class="admin-panel-icon blog" src = "{{ URL::asset('/images/syde-images/admin-images/edit-blog-01.png')}}" alt = "logo">
 
-            			<a href="/blog">
-            				<img class="admin-panel-icon  blog" src = "{{ URL::asset('/images/syde-images/admin-images/edit-blog-01.png')}}" alt = "logo">
-            			</a>
-
-            			<a href="/projects">
-            				<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/projects-01.png')}}" alt = "logo">
-            			</a>
-
+            			<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/projects-01.png')}}" alt = "logo">
             		</div>
             </div>
          <div class="row admin-content">

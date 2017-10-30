@@ -13,6 +13,9 @@
 }
 .admin-content{
 	background-color: #ebebeb;
+	padding-top:50px;
+	padding-bottom: 50px;
+
 }
 
 
@@ -21,4 +24,13 @@
 	padding: 10px 10px;
 	margin-top: 30px;
 	margin-bottom: 50px;
+}
+
+
+/****************************************************BLOGS PAGE*******************************************/
+.blog-card{
+	background-color: #ffffff;
+	padding:10px 10px;
+	border-right: 1px solid #aeaeae;
+	border-bottom: 1px solid #aeaeae;
 }

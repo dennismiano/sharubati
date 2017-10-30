@@ -26,7 +26,17 @@
             		<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/admin-menu.png')}}" alt = "logo">
 
             		<div class="admin-panel-links pull-right">
+<<<<<<< HEAD
+            			<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/leads-01.png')}}" alt = "logo">
 
+            			<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/messages-01.png')}}" alt = "logo">
+
+            			<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/subscribers-01.png')}}" alt = "logo">
+
+            			<img class="admin-panel-icon blog" src = "{{ URL::asset('/images/syde-images/admin-images/edit-blog-01.png')}}" alt = "logo">
+
+            			<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/projects-01.png')}}" alt = "logo">
+=======
             			
             			<a href="/admin-home">
             				<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/leads-01.png')}}" alt = "logo">
@@ -41,13 +51,13 @@
             			</a>
 
             			<a href="/blog">
-            				<img class="admin-panel-icon  blog" src = "{{ URL::asset('/images/syde-images/admin-images/edit-blog-01.png')}}" alt = "logo">
+            				<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/edit-blog-01.png')}}" alt = "logo">
             			</a>
 
             			<a href="/projects">
             				<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/projects-01.png')}}" alt = "logo">
             			</a>
-
+>>>>>>> bc11356766099b4acd5a35278c14043cf8d053ba
             		</div>
             </div>
          <div class="row admin-content">
