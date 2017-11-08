@@ -32,30 +32,30 @@
   
     <body>
 
+<!--HEADER-->
 
-
-<!--ABOVE FOLD-->
-        <div class="row sharubati-header">
+        <div class="container-fluid">
+            <div class="row sharubati-header">
 
                 <div class="container">
                     <img class="sharubati-logo" src = "{{ URL::asset('/images/syde-images/sharubati-logo.png')}}" alt = "logo">
 
                     <div class="pull-right menus">
-                        <b><ul class="menu-links">
-                            <li class="links-list white">home</li>
-                            <li class="links-list white">solutions</li>
-                            <li class="links-list white">blog</li>
-                            <li class="links-list white">team</li>
-                        </ul></b>
+                       <ul class="menu-links">
+                            <li class="links-list white sharubati-text">home</li>
+                            <li class="links-list white sharubati-text">solutions</li>
+                            <li class="links-list white sharubati-text">blog</li>
+                            <li class="links-list white sharubati-text">team</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            
-        <div class="container-fluid above-fold">
 
-                <div class="row">
+
+<!--ABOVE FOLD-->
+              <div class="row above-fold">
                  
-
+                    <div class="container">
                         <div class="hero-text-container">
                             <h1 class="hero-title align-center blue">We are building a whole new <b>Digital World.</b></h1>
                             <h1 class="hero-title align-center blue"><b>For Businesses</b></h1>
@@ -65,7 +65,6 @@
                             <button class="hero-button">Lets talk about your project</button>
                         </div>
                     </div>
-
 
                 </div>
 
@@ -129,7 +128,7 @@
         </div>
 
 <!--MORE ABOUT US-->
-        <div class="container-fluid more">
+        <div class="row more">
             <div class="container">
                 <div class="more-container">
                     <div class="row">
@@ -175,64 +174,58 @@
         </div>
     </div>
 
-        <div class="container-fluid testimony">
-            <h2 class="testimonial-header sharubati-title" >Our Happy Customers</h2>
+        <div class="row testimony">
+            <h2 class="testimonial-header sharubati-title" >What Our Customers Say About Us</h2>
             
             <div class="col-md-8 col-md-offset-2">
-                <div class="row">
-                    <div class="col-md-3">
-                    <img class="testimony-image img-resonsive" src = "{{ URL::asset('/images/syde-images/testimonial-image.png')}}" alt = "devops-icon">
-                    </div>
 
-                    <div class="col-md-9">
-                        <p class="testimony-text sharubati-text">
-                            When i was setting up, i needed a consultant who would help me appropiately position the brand and give it that unique identity.  SYDE brought the business brand to life and implemented an effective way to gain awareness fast and i was amazed at how easily we hit our set threshold.<br><b>~ Oliver, Autokey.</b>
+                    <img class="img-resonsive testimony-icon" src = "{{ URL::asset('/images/syde-images/testimony-speech-marks.png')}}" alt = "speech-marks">
+
+                        <p class="testimony-text sharubati-text align-center">
+                            When i was setting up, i needed a consultant who would help me appropiately position the brand and give it that unique identity.  <b>Sharubati Technologies</b> brought the business brand to life and implemented an effective way to gain awareness fast and i was amazed at how easily we hit our set threshold.<br><b>~ Oliver, Autokey.</b>
                         </p>
-                    </div>
-
-                </div>
             </div>
 
         </div>
 
-        <div class="container">
-            <div class="col-md-8 col-md-offset-2">
+        <div class="row container client-logos">
+            <div class="col-md-10 col-md-offset-1">
                     <h2 class="clients-header sharubati-title">Some of the brands we have worked with.</h2>
-                <div class="row ">
-                    <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
                         <img class="img-resonsive client-logo" src = "{{ URL::asset('/images/syde-images/omega-logo.png')}}" alt = "devops-icon">
                     </div>
 
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/pace-logo.png')}}" alt = "devops-icon">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <img class="img-resonsive client-logo" src = "{{ URL::asset('/images/syde-images/pace-logo.png')}}" alt = "devops-icon">
                     </div>
 
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/startimes-logo.png')}}" alt = "devops-icon">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <img class="img-resonsive client-logo" src = "{{ URL::asset('/images/syde-images/startimes-logo.png')}}" alt = "devops-icon">
                     </div>
 
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/umati-logo.png')}}" alt = "devops-icon">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <img class="img-resonsive client-logo" src = "{{ URL::asset('/images/syde-images/umati-logo.png')}}" alt = "devops-icon">
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <img class="img-resonsive client-logo" src = "{{ URL::asset('/images/syde-images/yakayeke-logo.png')}}" alt = "devops-icon">
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <img class="img-resonsive client-logo" src = "{{ URL::asset('/images/syde-images/techguy-logo.png')}}" alt = "devops-icon">
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <img class="img-resonsive client-logo" src = "{{ URL::asset('/images/syde-images/adventurepics-logo.png')}}" alt = "devops-icon">
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <img class="img-resonsive client-logo" src = "{{ URL::asset('/images/syde-images/nairobichapel-logo.png')}}" alt = "devops-icon">
                     </div>
                 </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-4">
-                        <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/yakayeke-logo.png')}}" alt = "devops-icon">
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-4">
-                        <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/techguy-logo.png')}}" alt = "devops-icon">
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-4">
-                        <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/adventurepics-logo.png')}}" alt = "devops-icon">
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-4">
-                        <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/nairobichapel-logo.png')}}" alt = "devops-icon">
-                    </div>
-            </div>
         </div>
+    </div>
 
 
 
@@ -240,14 +233,18 @@
 
     <div class="container">
         <div class="col-md-10 col-md-offset-1">
-            <h3 class="white align-center subcriber-statement sharubati-title">Get marketing insights, tips on how to grow your company brand, our informed news letters and much much more right into your inbox.</h3>
+            <h3 class="white align-center subcriber-statement sharubati-title"><b>The Digital World</b> is exploding with <b>new information</b> everyday and we have made it our business to keep you informed and offer insights for your business.</br> Join our growing list of subscribers.</h3>
 
-                <div class="subscriber-form">
-                    <form class="">
-                        <input type="text" class="form-control no-border subcriber-email" id="budget" placeholder="your email">
-                        <button type="submit" class="form-button pull-right"><b>Subscribe</b><i class="fa fa-arrow-right"></i></button>
-                    </form>
-                </div>
+    <div class="subscriber-form col-md-8 col-md-offset-2">
+        <form class="form-inline">
+        <div class="form-group col-md-8">
+            <input type="text" class="sharubati-form sharubati-text"  placeholder="your email">
+        </div>
+        <div class="form-group col-md-4">
+          <button type="submit" class="form-button sharubati-title">Subscribe</button>
+        </div>
+        </form>
+    </div>
 
         </div>
     </div>
@@ -257,16 +254,26 @@
     <div class="container">
         <div class="col-md-4">
             <h1 class="sharubati-title">Who We Are</h1>
-            <p class="sharubati-text footer-text">Sharubati Technologies is a tech firm that was set up to offer integrated digital solutions to our customers. From design, print, brand origination, UX/UI, web, software development,  digital strategy and marketing, data handling and analytics. 
+            <p class="sharubati-text footer-text"><b>Sharubati Technologies</b> is an IT consultancy firm based in Nairobi and was set up to offer 360 degrees digital solutions to our customers. From design, print, brand origination, UX/UI, web, software development,  digital strategy and marketing, data handling and analytics. 
             Our  view is most of these services are related and by having them executed in one firm allows for a very informed concept and consistency in execution.
             </p>
 
             <h4 class="sharubati-text"><b>Sharubati Technologies Ltd.</b></h4>
+            <h5 class="sharubati-text"><b>+254 725 131 565 (Dennis)</b></h5>
+            <h5 class="sharubati-text"><b>+254 725 131 565 (Sydney)</b></h5>
+
         </div>
 
         <div class="col-md-4">
             <h1 class="sharubati-title">We Are Social</h1>
-            <p class="sharubati-text footer-text">Every so often we share our work experience with our followers on social media pages and encourage them to do the same.</p>
+            <p class="sharubati-text footer-text">Every so often we share our wisdom gained from work experience with our followers on social media pages. </p>
+            
+            <div class="social-icons">
+                <a href=""><img class="social-icon" src = "{{ URL::asset('/images/syde-images/social-icons-02.png')}}" alt = "logo"></a>
+                <a href=""><img class="social-icon" src = "{{ URL::asset('/images/syde-images/social-icons-03.png')}}" alt = "logo"></a>
+                <a href=""><img class="social-icon" src = "{{ URL::asset('/images/syde-images/social-icons-04.png')}}" alt = "logo"></a>
+                <a href=""><img class="social-icon" src = "{{ URL::asset('/images/syde-images/social-icons-05.png')}}" alt = "logo"></a>
+            </div>
         </div>
 
         <div class="col-md-4">
@@ -274,43 +281,35 @@
                                     <h2 class="form-title sharubati-title white">Contact us</h2>
                                 </div>
 
-                                <div class="row form-body">
+                                <div class="row footer-form-body">
                                      <form>
                                       
                                       <div class="form-group">
                                        <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border" id="" placeholder="name">
+                                        <input type="text" class="form-control no-border sharubati-text" id="" placeholder="name">
                                       </div>
 
                                       <div class="form-group">
                                        <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border" id="" placeholder="email">
+                                        <input type="text" class="form-control no-border sharubati-text" id="" placeholder="email">
                                       </div>
                                       
                                       <div class="form-group">
                                        <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border" id="budget" placeholder="phone no.">
+                                        <input type="text" class="form-control no-border sharubati-text" id="budget" placeholder="phone no.">
                                       </div>
                                       
                                       <div class="form-group">
                                        <!-- <label for="project-category">What is your project about?</label>-->
-                                        <textarea class="form-control no-border" cols="3">Message</textarea>
+                                        <textarea class="form-control no-border sharubati-text" rows="4">Message</textarea>
                                       </div>
 
-                                      <button type="submit" class="form-button pull-right"><b>A few more details</b><i class="fa fa-arrow-right"></i></button>
+                                      <button type="submit" class="sharubati-button pull-right"><b>A few more details</b><i class="fa fa-arrow-right"></i></button>
                                     </form>
                                 </div>  
         </div>
     </div>
-    
-
-        
-		
-
+     
     </body>
- </html> 
-
-
-        
-
+</html>
 

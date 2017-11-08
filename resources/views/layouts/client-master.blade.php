@@ -28,12 +28,12 @@
                     <img class="sharubati-logo" src = "{{ URL::asset('/images/syde-images/sharubati-logo.png')}}" alt = "logo">
 
                     <div class="pull-right menus">
-                        <b><ul class="menu-links">
-                            <li class="links-list white">home</li>
-                            <li class="links-list white">solutions</li>
-                            <li class="links-list white">blog</li>
-                            <li class="links-list white">team</li>
-                        </ul></b>
+                       <ul class="menu-links">
+                            <li class="links-list white sharubati-text">home</li>
+                            <li class="links-list white sharubati-text">solutions</li>
+                            <li class="links-list white sharubati-text">blog</li>
+                            <li class="links-list white sharubati-text">team</li>
+                        </ul>
                     </div>
                 </div>
             </div>
