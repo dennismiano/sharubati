@@ -21,7 +21,9 @@ class adminz extends Controller
 	public function  login_admin( Request $request ){
 		if( $request->isMethod("POST")  ){
 			if(Auth::guard('admin')->attempt(['email'=>$request->email,'password'=>$request->password])  ){
-				return redirect("/admin/home");
+				$df=Auth::guard('admin')->id();
+				return $df=Auth::guard('admin')->id();
+				//redirect("/admin/home");
 				//return redirect()->action("adminz@homess");
 				//return "<p>test</p>";
 			}
