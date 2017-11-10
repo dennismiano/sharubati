@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class comments extends Model
 {
     //mass assign
-	protected $fillable=['body','post_id','file_id'];
+	protected $fillable=['body','post_id','name','email'];
 	
 	public function post(){
 		return $this->belongsTo('App\posts','post_id');

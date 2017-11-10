@@ -16,64 +16,45 @@ Route::get('/', function () {
 });
 
 //blog user base view
-Route::get('/blog',"blog@view_post");
+Route::get('/blog','blog@user_view');
 
 //blog user comment form
-Route::get('/blog/comment/form', function () {
-    return view('welcome');
-});
-//blog user comment
-Route::post('/blog/comment', function () {
-    return view('welcome');
-});
-
-//return form
-Route::post('/project/form', function () {
-    return view('welcome');
-});
+Route::get('/blog/comment/form/{id}', 'blog@cmt_form');
+//save blog user comment
+Route::post('/blog/comment', 'blog@cmt_save');
 
 Route::get('/test', 'adminz@ser');
 
 
 
 
-//BEGIN admin panel routes
+//**************BEGIN admin panel routes
 
 //admin log in returns admin form
 Route::get('/admin', 'adminz@login_form');
-
 //admin check credentials for logging in
 Route::post('/admin/login', 'adminz@login_admin');
-
-
 //returns admin dashboard
-Route::get('/admin/home', function () {
-    return view('admin.admin_home');
-});
-//blog admin post return blog post form
-Route::get('/blog/post/form', 'blog@view_post');
+Route::get('/admin/home', "adminz@homess");
+//blog admin post return blog post form and blog base view
+Route::get('/blog/admin', 'blog@view_post');
 //save blogpost submitted by admin
-Route::post('/blog/post', function () {
-    return view('welcome');
-});
-
-Route::get('/admin-home', function () {
-    return view('/admin/admin_home');
-});
-
-//ADMIN ROUTES FOR TESTING TO BE DELETED
-Route::get('/subscribers', function () {
-    return view('/admin/subscribers');
-});
-
-Route::get('/messages', function () {
-    return view('/admin/messages');
-});
-
-Route::get('/projects', function () {
-    return view('/admin/projects');
-});
-//end admin panel routes
+Route::post('/blog/post', 'blog@create_post');
+//admin del post
+Route::get('/blog/del/post/{id}', 'blog@del_post');
+//update post ,form
+Route::get('/blog/update/form/{id}','blog@update_post');
+//save updated post
+Route::post('/blog/update/save','blog@update_save');
+//view  a selected post
+Route::get('/blog/view/{id}','blog@sel_post');
+//admin delete comment
+Route::get('/cmt/del/{id}','blog@del_comnt');
+//return admin comment form
+Route::get('/blog/cmt/{id}','blog@ad_cmt_form');
+//save admin cmt
+Route::post('/blog/cmt','blog@ad_cmt_save');
+//************END admin panel routes
 
 
 
