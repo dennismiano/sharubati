@@ -5,9 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google-site-verification" content="n9swYqcSP0lnLuQubAo4b3psuDZ2J19iaaGJndIcBpM" />
-        
 
-        <title>Sharubati Change</title>
+        <title>Sharubati Technologies</title>
         <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{ URL::asset('/css/syde.css')}}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway|Sanchez" rel="stylesheet">
@@ -29,9 +28,6 @@
 
               gtag('config', 'UA-107410195-1');
             </script>
-
-
-
     </head>
   
     <body>
@@ -145,7 +141,7 @@
                                 <h4 class="services-title"><b>DEVELOPMENT</b></h4>
                                 <p class="sharubati-text">Whether its a website, a web application or a custom business software, we have a professional team of designers and developers  that collaborates to deliver solutions that are functional and scalable.
                                     <ul>
-                                        <li class="sharubati-text"><a href="web">Web systems</a></li>
+                                        <li class="sharubati-text"><a  class="nav-user" href="web">Web systems</a></li>
                                         <li class="sharubati-text"><a href="development">Custom Enterprise Software</a></li>
                                     </ul>
 
@@ -261,8 +257,7 @@
             </div>
     </div>
 </div>
-</p>
-</div>
+
 
 <div class="row subscribe">
     <div class="container">
@@ -310,40 +305,50 @@
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 ms_leave">
                             <div class="row form-header">
                                     <h2 class="form-title sharubati-title white">Contact us</h2>
                                 </div>
 
                                 <div class="row footer-form-body">
-                                     <form>
+                                    <form class="msg_form">
+									{{csrf_field()}}
                                       
                                       <div class="form-group">
-                                       <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border sharubati-text" id="" placeholder="name">
+                                        <input type="text" class="form-control no-border sharubati-text" id="" name="name" placeholder="Name"  required>
                                       </div>
 
                                       <div class="form-group">
-                                       <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border sharubati-text" id="" placeholder="email">
+                                        <input type="email" class="form-control no-border sharubati-text" id="" name="email" placeholder=" Email" required>
                                       </div>
+
+									  <div class="form-group update" hidden >
+	   
+										<input type="text" class="form-control no-border sharubati-text" id="budget" name="phone_no" placeholder="phone no." required>
+									  </div>
+									  
+									  <div class="form-group  update " hidden>
+									   
+										<textarea class="form-control no-border sharubati-text" cols="3"  name="body"  placeholder="Type Message" required>Message</textarea>
+									  </div>
                                       
+<!-- <<<<<<<< HEAD
                                       <div class="form-group">
-                                       <!-- <label for="project-category">What is your project about?</label>-->
                                         <input type="text" class="form-control no-border sharubati-text" id="budget" placeholder="phone no.">
                                       </div>
                                       
                                       <div class="form-group">
-                                       <!-- <label for="project-category">What is your project about?</label>-->
                                         <textarea class="form-control no-border sharubati-text" rows="4">Message</textarea>
                                       </div>
 
-                                      <button type="submit" class="sharubati-button pull-right"><b>A few more details</b> <i class="fa fa-paper-plane"></i></button>
+                                      <button type="submit" class="sharubati-button pull-right"><b>A few more details</b> <i class="fa fa-paper-plane"></i></button>-->
+                                      
+
+                                      <button type="button" class="sharubati-button pull-right msg_bt fm_btn"><b class="change">A few more details </b> <i class="fa fa-arrow-right"></i></button>
                                     </form>
                                 </div>  
         </div>
     </div>
-     
     </body>
 </html>
 

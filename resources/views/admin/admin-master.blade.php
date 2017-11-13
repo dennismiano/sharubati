@@ -30,7 +30,7 @@
             				<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/leads-01.png')}}" alt = "logo">
             			</a>
 
-            			<a href="/messages">
+            			<a  class="nav_li" href="/msg/view">
             				<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/messages-01.png')}}" alt = "logo">
             			</a>
 

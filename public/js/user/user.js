@@ -47,6 +47,7 @@ $(document).ready( function(){
 			success:function(data){
 				l.parents(".user_p").after(data);
 				//alert("i");
+				l.hide();
 				
 			}
 			
@@ -80,4 +81,56 @@ $(document).ready( function(){
 		});
 		
 	}  );
+	//mouse out rm cmt 
+	$("body").on("mouseleave",".cmt_div",function(){
+		   $(this).remove();
+		   $(".u_b").show(5000);
+	}   );
+	//msg form add more fields
+	$("body").on("click",".msg_bt",function(e){
+		    e.preventDefault();
+			e.stopImmediatePropagation();
+		   $(".update").show(2000);
+		   $(".change").text("send");
+		   $(this).attr({type:"submit"});
+		   $(this).toggleClass("msg_bt");
+		   
+	}   );
+	//hover out reduce msg form
+	$("body").on("mouseleave",".ms_leave",function(e){
+		    e.preventDefault();
+			e.stopImmediatePropagation();
+		   $(".update").hide(1000);
+		   $(".change").text("A few more details");
+		   $(".fm_btn").attr({type:"button"});
+		   $(".fm_btn").toggleClass("msg_bt");
+		   
+	}   );
+	//save messAGES
+	$("body").on("submit",".msg_form",function(e){
+			e.preventDefault();
+			e.stopImmediatePropagation();
+			var da= new FormData(this);
+			$.ajax({
+				async:true,
+				type:"POST",
+				url:"/msg/save",
+				data:da,
+				contentType:false,
+				processData:false,
+				error:function(data){
+					$(".magic").empty().html(data);
+				},
+				success:function(data){
+					alert(data);
+					$(".msg_form")[0].reset();
+					
+				}
+				
+			}); 
+			//alert("hit");
+		   
+		   
+	}   );
+
 });

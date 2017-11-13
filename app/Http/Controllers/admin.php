@@ -23,14 +23,14 @@ class admin extends Controller
 				
 			}
 			else{
-				return error(404);
+				return abort(404);
 			}
 			
 			
 			
 		}
 		else{
-			return error(404);
+			return abort(404);
 		}
 	    
 	}

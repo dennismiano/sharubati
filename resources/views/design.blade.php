@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 32ed615ea4dec8bfe279993b0210bf3ad7f910b3
 <div class="row pages-header">
 	<div class="container">
 		<div class="col-md-4">
@@ -110,4 +113,7 @@
 	</div>
 </div>
 
+<<<<<<< HEAD
  
+=======
+>>>>>>> 32ed615ea4dec8bfe279993b0210bf3ad7f910b3
