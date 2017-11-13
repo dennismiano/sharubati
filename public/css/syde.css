@@ -39,7 +39,7 @@
 
 /******************************************HOME PAGE STYLING**************************************/
 .menus{
-	padding-top: 15px;
+	padding-top: 5px;
 }
 .menu-links{
 	list-style: none;
@@ -60,7 +60,7 @@
 
 .above-fold{
 	background-image: url("/images/syde-images/images/hero-image.jpg");
-	height:650px;
+	height:500px;
 	background-size: cover;
 	background-position: center;
 	overflow:hidden;
@@ -80,7 +80,7 @@
 
 }
 .hero-text-container{
-	margin-top: 200px;
+	margin-top: 250px;
 }
 
 .hero-button{
@@ -95,15 +95,33 @@
 	border-radius: 30px;
 	margin-top: 20px;
 	font-family: 'Sanchez', serif;
-	font-size: 15pt;
+	font-size: 10pt;
 }
 
 .hero-title{
 	font-family: 'Sanchez', serif;
-	z-index: 999;
-	font-size: 40pt;
+	font-size: 20pt;
 }
 
+
+/****************************************ADAPTING ABOVE FOLD FOR HOME PAGE MEDIUM SCREEN*********************/
+@media only screen and (min-width : 992px){
+	.above-fold{
+	height:650px;
+	}
+
+	.hero-text-container{
+		margin-top: 250px;
+	}
+
+	.hero-title{
+		font-size: 40pt;
+	}
+
+	.hero-button{
+		font-size: 15pt;
+	}
+}
 
 
 /************************************SERVICES SECTION****************************************/
@@ -115,8 +133,9 @@
 	padding-top: 30px;
 	font-family: 'Sanchez', serif;
 	color: #341e59;
-	padding-right: 30px;
+	padding-right: 5px;
 }
+
 
 .border-bar{
 	width: 20%;
@@ -128,7 +147,6 @@
 }
 .services-container{
 	background-color: #fafbfb;
-	margin-left: -20px;
 	padding:10px 10px;
 	margin-bottom: 50px; 
 	border:0.5px solid #ebebeb;
@@ -157,10 +175,26 @@ box-shadow: 0px 0px 9px -1px rgba(212,212,212,1);
 }
 
 .services-text{
-	padding-right: 30px;
+	padding-right: 5px;
 }
 
+/***************************************ADAPTING MAIN-SERVICES FOR MEDIUM SCREEN VIEWING**************/
+@media only screen and (min-width : 992px){
+	.services-header{
+		padding-top: 30px;
+		font-family: 'Sanchez', serif;
+		color: #341e59;
+		padding-right: 30px;
+	}
 
+	.services-container{
+		margin-left: -20px;
+	}
+
+	.services-text{
+		padding-right: 30px;
+	}
+}
 /******************************************MORE ABOUT US SECTION**********************************/
 .more{
 	background: red; /* For browsers that do not support gradients */
@@ -170,24 +204,30 @@ box-shadow: 0px 0px 9px -1px rgba(212,212,212,1);
   	background: linear-gradient(to right , #ca364f, #44425f); /* Standard syntax */
 	margin-left: -30px;
 	margin-right: -30px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 .more-container{
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 0 px;
+	margin-bottom: 0 px;
 	background-color: #fff;
+	border-top:1px solid #ebebeb;
 }
 .more-title{
-	padding-top: 0px;
-	padding-right: :20px;
-	padding-left: 50px;
+	padding-top: 20px;
+	padding-right: :30px;
+	padding-left: 30px;
 }
 
 .text-container{
 	padding-right: 30px;
+	background-color: #fff;
 }
+
 .more-text{
 	padding-right: :20px;
-	padding-left: 50px;
+	padding-left: 30px;
+	padding-bottom: 30px;
 }
 
 .form-container{
@@ -195,7 +235,8 @@ box-shadow: 0px 0px 9px -1px rgba(212,212,212,1);
 }
 
 .form-header{
-	background-image: url("/images/syde-images/formbg-01.png");
+
+	background-image:url("/images/syde-images/formbg-01.png");
 	margin-top: 0;
 	margin-left: -15px;
 	margin-right: -15px;
@@ -203,15 +244,22 @@ box-shadow: 0px 0px 9px -1px rgba(212,212,212,1);
 
 .form-title{
 	padding-left:10px;
-	padding-top: 30px;
-	padding-bottom:25px;
-	border-radius: 5px;
+	padding-top: 15px;
+	padding-bottom:15px;
+	font-size: 20pt;
 }
 
 .form-body{
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+.more-form-body{
+		padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
 	padding-bottom: 40px;
 }
 .form-button{
@@ -247,9 +295,20 @@ box-shadow: 0px 0px 9px -1px rgba(212,212,212,1);
 	outline: none;
 }
 
+.form-bg{
+	background-color: #ebebeb;
+}
+
+/**************************************ADAPTING MORE SECTION TO STANDARD MEDIUM SCREEN*************************/
+@media only screen and (min-width : 992px){
+	.more-container{
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+}
 /*******************************************************TESTIMONIAL SECTION*********************************************/
 .testimony{
-	background-color: #ebebeb;
+	background-color: #d6d6d6;
 	padding-bottom: 100px;
 	padding-top: 100px;
 	margin-left: -30px;
@@ -334,28 +393,28 @@ box-shadow: 0px 0px 9px -1px rgba(212,212,212,1);
 }
 
 .pages-header-title{
-	font-size: 40pt;
+	font-size: 25pt;
 }
 
 .speech-mark{
-	max-width: 40px;
-	height:auto;
-	float:left;
-	margin-left: -50px;
-	margin-top: 30px;
+	display: none;
 }
 
+.pages-header-text{
+	font-size: 17pt;
+	margin-top: 20px;
+}
 
 /*************************************************PAGES CONTENT******************************************************/
 .pages-container{
-	margin-top: 70px;
+	margin-top: 50px;
 	padding-bottom: 50px;
 }
 
-.padding-text-right{
-	padding-right: 100px;
+.pages-text-container{
+	margin-left: -15px;
+	margin-right: -15px;
 }
-
 .pages-form-container{
 	background-color: #f2f2f2;
 }
@@ -364,6 +423,9 @@ box-shadow: 0px 0px 9px -1px rgba(212,212,212,1);
 	padding-bottom: 15px;
 }
 
+.page-text {
+	padding-bottom: 50px;
+}
 
 
 
@@ -377,26 +439,58 @@ box-shadow: 0px 0px 9px -1px rgba(212,212,212,1);
 
 .projects-container{
 	background-color: #fff;
-	margin-top: 10px;
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
-
+.project-holder{
+	border-radius:10px;
+	background-color: #fff;
+	-webkit-box-shadow: -1px 4px 5px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 4px 5px -5px rgba(0,0,0,0.75);
+	box-shadow: -1px 4px 5px -5px rgba(0,0,0,0.75);
+}
 .projects-header{
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 20px;
+	font-size: 20pt;
 }
 .project-thumbnail{
 	width: 100%;
-	height: auto;
-	margin-left: -30px;
+}
+
+.project-text-holder{
+	background-color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 40px;
 }
 .project-header{
-	padding-top: 50px;
+	padding-top: 10px;
 }
 .project-text{
 	padding-top: 20px;
 }
+.tags-text{
+	margin-top: 0;
+}
+/******************************OPTIMIZING FOR PAGES MEDIUM SCREEN*********************/
+@media only screen and (min-width : 992px){
+	.speech-mark{
+		max-width: 40px;
+		height:auto;
+		float:left;
+		margin-left: -50px;
+		margin-top: 20px;
+		display: block;
+	}
 
-
+	.pages-text-container{
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-right: 50px;
+	}
+}
 
 /*************************************************************SUBSCRIBER FORM************************************************/
 .subscribe{
@@ -437,7 +531,7 @@ box-shadow: 0px 0px 9px -1px rgba(212,212,212,1);
 }
 
 .footer-text{
-	padding-right: 30px;
+	padding-right: 10px;
 }
 
 .social-icon{
@@ -449,6 +543,10 @@ box-shadow: 0px 0px 9px -1px rgba(212,212,212,1);
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 20px;
+}
+
+.footer-container{
+margin-bottom: 50px;	
 }
 
 
