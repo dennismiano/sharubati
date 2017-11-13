@@ -1,6 +1,3 @@
-@extends('layouts.client-master')
-
-@section('content')
 <div class="row pages-header">
 	<div class="container">
 		<div class="col-md-4">
@@ -66,5 +63,3 @@
 		</div>
 	</div>
 </div>
-@include('layouts.client-footer')
-@endsection

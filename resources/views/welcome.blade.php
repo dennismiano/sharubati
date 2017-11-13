@@ -6,10 +6,10 @@
         <meta name="google-site-verification" content="n9swYqcSP0lnLuQubAo4b3psuDZ2J19iaaGJndIcBpM" />
         
 
-        <title>Sharubati Change</title>
+        <title>Sharubati Technologies</title>
         <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{ URL::asset('/css/syde.css')}}" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway|Sanchez" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Raleway|Sanchez" rel="stylesheet"> -->
 		<script src="/js/jquery-3.2.1.min.js"></script>
 		<script src="/js/jquery-ui.min.js"></script>
 	   
@@ -17,14 +17,14 @@
 	   
         
 			<!-- Global Site Tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107410195-1"></script>
+			<!--  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107410195-1"></script>
 			<script>
 			  window.dataLayer = window.dataLayer || [];
 			  function gtag(){dataLayer.push(arguments)};
 			  gtag('js', new Date());
 
 			  gtag('config', 'UA-107410195-1');
-			</script>
+			</script> -->
 
 
 
@@ -42,6 +42,7 @@
 
                     <div class="pull-right menus">
                         <b><ul class="menu-links">
+						{{--   add class nav_user loads into magic class thru ajax    --}}
                             <li class="links-list white"><a  class="nav_user" href="/">home</a></li>
                             <li class="links-list white"><a  class="nav_user" href="#">solutions</a></li>
                             <li class="links-list white"><a  class="nav_user" href="/blog">blog</a></li>
@@ -90,8 +91,8 @@
 													<h4 class="services-title"><b>DESIGN</b></h4>
 													<p class="sharubati-text">If you are looking for that high quality work that makes your business stand out and gives your brand an appealing identity, we are the team you need;
 														<ul>
-															<li class="sharubati-text"><a href="branding">Branding</a></li>
-															<li class="sharubati-text"><a href="design-and-print">Print</a></li>
+															<li class="sharubati-text"><a class="nav_user" href="/branding">Branding</a></li>
+															<li class="sharubati-text"><a class="nav_user" href="/design-and-print">Print</a></li>
 														</ul>
 													</p>
 												</div>
@@ -103,8 +104,8 @@
 													<h4 class="services-title"><b>DEVELOPMENT</b></h4>
 													<p class="sharubati-text">Whether its a website, a web application or a custom business software, we have a professional team of designers and developers  that collaborates to deliver solutions that are functional and scalable.
 														<ul>
-															<li class="sharubati-text"><a href="web">Web systems</a></li>
-															<li class="sharubati-text"><a href="development">Custom Enterprise Software</a></li>
+															<li class="sharubati-text"><a class="nav_user" href="/web">Web systems</a></li>
+															<li class="sharubati-text"><a class="nav_user" href="/development">Custom Enterprise Software</a></li>
 														</ul>
 
 													</p>
@@ -117,9 +118,9 @@
 													<h4 class="services-title"><b>STRATEGY</b></h4>
 													<p class="sharubati-text">Data driven strategy to increase leads and conversions. We use a combinations of tools and media, a deep insight into buyer behavior to inform your digital options
 														<ul>
-															<li class="sharubati-text"><a href="digital-marketing">Content Marketing</a></li>
-															<li class="sharubati-text"><a href="digital-marketing">Social Media Marketing</a></li>
-															<li class="sharubati-text"><a href="digital-marketing">Search Marketing (SEO, SEM)</a></li>
+															<li class="sharubati-text"><a class="nav_user" href="/digital-marketing">Content Marketing</a></li>
+															<li class="sharubati-text"><a class="nav_user"  href="/digital-marketing">Social Media Marketing</a></li>
+															<li class="sharubati-text"><a  class="nav_user" href="/digital-marketing">Search Marketing (SEO, SEM)</a></li>
 														</ul>
 													</p>
 											</div>
@@ -269,35 +270,36 @@
             <p class="sharubati-text footer-text">Every so often we share our work experience with our followers on social media pages and encourage them to do the same.</p>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 ms_leave">
                             <div class="row form-header">
                                     <h2 class="form-title sharubati-title white">Contact us</h2>
                                 </div>
 
-                                <div class="row form-body">
-                                     <form>
-                                      
+                                <div class="row form-body ">
+                                    <form class="msg_form">
+									{{csrf_field()}}
                                       <div class="form-group">
-                                       <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border" id="" placeholder="name">
+                                       
+                                        <input type="text" class="form-control no-border" id="" name="name" placeholder="Name"  required>
                                       </div>
 
                                       <div class="form-group">
-                                       <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border" id="" placeholder="email">
+                                       
+                                        <input type="email" class="form-control no-border" id="" name="email" placeholder=" Email" required>
                                       </div>
+									  <div class="form-group update" hidden >
+	   
+										<input type="text" class="form-control no-border" id="budget" name="phone_no" placeholder="phone no." required>
+									  </div>
+									  
+									  <div class="form-group  update " hidden>
+									   
+										<textarea class="form-control no-border" cols="3"  name="body"  placeholder="Type Message" required>Message</textarea>
+									  </div>
                                       
-                                      <div class="form-group">
-                                       <!-- <label for="project-category">What is your project about?</label>-->
-                                        <input type="text" class="form-control no-border" id="budget" placeholder="phone no.">
-                                      </div>
                                       
-                                      <div class="form-group">
-                                       <!-- <label for="project-category">What is your project about?</label>-->
-                                        <textarea class="form-control no-border" cols="3">Message</textarea>
-                                      </div>
 
-                                      <button type="submit" class="form-button pull-right"><b>A few more details</b><i class="fa fa-arrow-right"></i></button>
+                                      <button type="button" class="form-button pull-right msg_bt fm_btn"><b class="change">A few more details</b><i class="fa fa-arrow-right"></i></button>
                                     </form>
                                 </div>  
         </div>
@@ -305,7 +307,7 @@
     
 
         
-		
+	</div>	
 
     </body>
  </html> 

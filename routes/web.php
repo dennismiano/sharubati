@@ -22,6 +22,11 @@ Route::get('/blog','blog@user_view');
 Route::get('/blog/comment/form/{id}', 'blog@cmt_form');
 //save blog user comment
 Route::post('/blog/comment', 'blog@cmt_save');
+//user msg form
+Route::get('/msg/form', 'messages@form');
+//save user messages
+Route::post('/msg/save', 'messages@save_msg');
+
 
 Route::get('/test', 'adminz@ser');
 
@@ -54,6 +59,10 @@ Route::get('/cmt/del/{id}','blog@del_comnt');
 Route::get('/blog/cmt/{id}','blog@ad_cmt_form');
 //save admin cmt
 Route::post('/blog/cmt','blog@ad_cmt_save');
+//return admin messages base view
+Route::get('/msg/view','messages@msg_view');
+
+
 //************END admin panel routes
 
 
