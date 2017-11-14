@@ -55,7 +55,7 @@
                        <ul class="menu-links">   
                             <li class="links-list white sharubati-text"><a data-target="#" class="sharubati-nav-link sharubati-text nav_user" href="/">home</a></li>
                             <li class="links-list dropdown">
-                                <a data-target="#" class="dropdown-toggle sharubati-nav-link sharubati-text nav_user" href="/design-and-print" data-toggle="dropdown">solutions<b class="caret"></b></a>
+                                <a data-target="#" class="dropdown-toggle sharubati-nav-link sharubati-text nav_user" href="" data-toggle="dropdown">solutions<b class="caret"></b></a>
 
                                 <ul class="dropdown-menu">
                                     <li class="sharubati-text"><a data-target="#" href="design-and-print">Design and Print</a></li>
