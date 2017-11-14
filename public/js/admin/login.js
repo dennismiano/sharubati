@@ -4,6 +4,26 @@ $(document).ready( function(){
 					'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')
 					}
 	});
+	//admin home
+	$.ajax({
+			async:true,
+			type:"GET",
+			url:"/",
+			contentType:false,
+			processData:false,
+			data:d,
+			error:function(data){
+				$("body").empty().html(data);
+			},
+			success:function(data){
+				$(".login_form").remove();
+				$("body").html(data);
+				
+			}
+			
+			
+		});
+	
 	//login admin
 	$(".login_admin").on("submit",function(e){
 		e.preventDefault();
