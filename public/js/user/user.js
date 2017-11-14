@@ -132,5 +132,34 @@ $(document).ready( function(){
 		   
 		   
 	}   );
+	//save sub
+	$("body").on("submit",".sub_form",function(e){
+			e.preventDefault();
+			e.stopImmediatePropagation();
+			var lg=$(this);
+			var da= new FormData(this);
+			$.ajax({
+				async:true,
+				type:"POST",
+				url:"/sub/save",
+				data:da,
+				contentType:false,
+				processData:false,
+				error:function(data){
+					$(".magic").empty().html(data);
+				},
+				success:function(data){
+					alert(data);
+					lg[0].reset();
+					
+					//$(".msg_form")[0].reset();
+					
+				}
+				
+			}); 
+			//alert("hit");
+		   
+		   
+	}   );
 
 });

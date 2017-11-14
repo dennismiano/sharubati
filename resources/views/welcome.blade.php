@@ -264,17 +264,18 @@
         <div class="col-md-10 col-md-offset-1">
             <h3 class="white align-center subcriber-statement sharubati-title"><b>The Digital World</b> is exploding with <b>new information</b> everyday and we have made it our business to keep you informed and offer insights for your business.</br> Join our growing list of subscribers.</h3>
 
-    <div class="subscriber-form col-md-8 col-md-offset-2">
-        <form class="form-inline">
-        <div class="form-group col-md-8">
-            <input type="text" class="sharubati-form sharubati-text"  placeholder="your email">
-        </div>
-        <div class="form-group col-md-4">
-          <button type="submit" class="form-button sharubati-title">Subscribe <i class="fa fa-paper-plane"></i></button>
-        </div>
-        </form>
-    </div>
+            <div class="subscriber-form col-md-8 col-md-offset-2">
+                    <form class="sub_form form-inline">
+                        <div class="form-group col-md-8">
+					       {{csrf_field()}}
+                            <input type="email" class="sharubati-form sharubati-text subcriber-email" id="budget" name="email" placeholder="your email" required>
+                        </div>
 
+                        <div class="form-group col-md-4">
+                            <button type="submit" class="form-button sharubati-title"><b>Subscribe</b><i class="fa fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+            </div>
         </div>
     </div>
 </div>

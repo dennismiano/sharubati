@@ -26,6 +26,8 @@ Route::post('/blog/comment', 'blog@cmt_save');
 Route::get('/msg/form', 'messages@form');
 //save user messages
 Route::post('/msg/save', 'messages@save_msg');
+//save subscriber
+Route::post('/sub/save','subscribers@save_sub');
 
 
 Route::get('/test', 'adminz@ser');
