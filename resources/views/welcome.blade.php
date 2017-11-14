@@ -244,8 +244,9 @@
             <h3 class="white align-center subcriber-statement sharubati-title">Get marketing insights, tips on how to grow your company brand, our informed news letters and much much more right into your inbox.</h3>
 
                 <div class="subscriber-form">
-                    <form class="">
-                        <input type="text" class="form-control no-border subcriber-email" id="budget" placeholder="your email">
+                    <form class="sub_form">
+					{{csrf_field()}}
+                        <input type="email" class="form-control no-border subcriber-email" id="budget" name="email" placeholder="your email" required>
                         <button type="submit" class="form-button pull-right"><b>Subscribe</b><i class="fa fa-arrow-right"></i></button>
                     </form>
                 </div>
