@@ -1,5 +1,3 @@
-
-
 <div class="row pages-header">
 	<div class="container">
 		<div class="col-md-4">
