@@ -9,6 +9,7 @@
         <title>Sharubati Technologies</title>
         <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{ URL::asset('/css/syde.css')}}" rel="stylesheet">
+        <link href="{{ URL::asset('/css/infinite-slider.css')}}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway|Sanchez" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,7 +18,9 @@
         <script  src="/js/user/user.js"></script>
         <script  src="/js/ajax/get.js"></script>
         <script  src="/js/bootstrap.bundle.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
         <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+        <script src="/js/carousel.js"></script>
        
         
             <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -230,33 +233,19 @@
         </div>
 
     <div class="row client-logos">
-            <div class="container">
-                    <h2 class="clients-header sharubati-title">Some of the brands we have worked with.</h2>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/omega-logo.png')}}" alt = "speech-marks">
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/pace-logo.png')}}" alt = "speech-marks">
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/techguy-logo.png')}}" alt = "speech-marks">
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/adventurepics-logo.png')}}" alt = "speech-marks">
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/umati-logo.png')}}" alt = "speech-marks">
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/yakayeke-logo.png')}}" alt = "speech-marks">
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/techguy-logo.png')}}" alt = "speech-marks">
-                </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <img class="img-resonsive" src = "{{ URL::asset('/images/syde-images/nairobichapel-logo.png')}}" alt = "speech-marks">
-                </div>
+            <h2 class="clients-header sharubati-title">Some of the brands we have worked with.</h2>
+            <div class="container">
+              <section class="customer-logos slider">
+                <div class="slide"><img src="{{ URL::asset('/images/syde-images/omega-logo.png')}}"></div>
+                <div class="slide"><img src="{{ URL::asset('/images/syde-images/pace-logo.png')}}"></div>
+                <div class="slide"><img src="{{ URL::asset('/images/syde-images/techguy-logo.png')}}"></div>
+                <div class="slide"><img src="{{ URL::asset('/images/syde-images/adventurepics-logo.png')}}"></div>
+                <div class="slide"><img src="{{ URL::asset('/images/syde-images/umati-logo.png')}}"></div>
+                <div class="slide"><img src="{{ URL::asset('/images/syde-images/yakayeke-logo.png')}}"></div>
+                <div class="slide"><img src="{{ URL::asset('/images/syde-images/techguy-logo.png')}}"></div>
+                <div class="slide"><img src="{{ URL::asset('/images/syde-images/nairobichapel-logo.png')}}"></div>
+              </section>
             </div>
     </div>
 </div>
@@ -287,13 +276,12 @@
     <div class="container">
         <div class="col-md-4 footer-container">
             <h1 class="sharubati-title">Who We Are</h1>
-            <p class="sharubati-text footer-text"><b>Sharubati Technologies</b> is an IT consultancy firm based in Nairobi and was set up to offer 360 degrees digital solutions to our customers. From design, print, brand origination, UX/UI, web, software development,  digital strategy and marketing, data handling and analytics. 
+            <p class="sharubati-text footer-text"><b>Sharubati Technologies</b> is an IT consulting firm based in Nairobi and was set up to offer 360 degrees digital solutions to our customers. From design, print, brand origination, UX/UI, web, software development,  digital strategy and marketing, data handling and analytics. 
             </p>
 
             <h4 class="sharubati-text"><b>Sharubati Technologies Ltd.</b></h4>
             <p class="sharubati-text"><i class="fa fa-phone-square"></i> +254 725 131 565 (Dennis)</h5>
             <p class="sharubati-text"><i class="fa fa-phone-square"></i> +254 724 209162 (Sydney)</h5>
-
         </div>
 
         <div class="col-md-4 footer-container">
