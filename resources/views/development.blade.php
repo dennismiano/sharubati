@@ -6,7 +6,7 @@
 
 			<div class="col-md-4 header-article-container pull-right">
 				<img class="speech-mark" src = "{{ URL::asset('/images/syde-images/quotes.png')}}" alt = "speech marks">
-				<h3 class="">The growth of internet has brought a whole new digital world with billion of users, we are helping businesses set up  a virtual shop as well</h3>
+				<h3 class="sharubati-title pages-header-text blue">The growth of internet has brought a whole new digital world with billion of users, we are helping businesses set up  a virtual shop as well</h3>
 			</div>
 		</div>
 </div>
@@ -15,12 +15,12 @@
 <div class="row pages-content">
 	<div class="container pages-container">
 		<div class="col-md-8">
-			<h3 class="page-content-title padding-text-right sharubati-title"><i>We are building secure, scalable and functional enterprise level software for businesses.</i></h3>
+			<h3 class="page-content-title sharubati-title"><i>We are building secure, scalable and functional enterprise level software for businesses.</i></h3>
 
-			<p class="page-text padding-text-right sharubati-title">Whether you are a start-up or an established business, we 	
+			<p class="page-text sharubati-text">Whether you are a start-up or an established business, we 	
 				We are helping build your IT strategy, by applying modern design principles, in conjunction with the latest in cloud, mobile, and desktop technologies, to create tailored solutions that connect co-workers and customers, accelerating business processes and saving resources.
 				</br></br>At sharubati we believe that code should not only be beautiful but also have the capability to grow with your business.Our products range from :
-				<ul>
+				<ul class="page-text sharubati-text">
 					<li>Appliction Development</li>
 					<li>Custom API Development and Integration</li>
 					<li>SQL and Big Data Database Services</li>

@@ -6,7 +6,7 @@
 
 		<div class="col-md-4 header-article-container pull-right">
 			<img class="speech-mark" src = "{{ URL::asset('/images/syde-images/quotes.png')}}" alt = "speech marks">
-			<h3 class="">The growth of internet has brought a whole new digital world with billion of users, we are helping businesses set up  a virtual shop as well</h3>
+			<h3 class="pages-header-text sharubati-title blue">The growth of internet has brought a whole new digital world with billion of users, we are helping businesses set up  a virtual shop as well</h3>
 		</div>
 	</div>
 </div>
@@ -77,54 +77,71 @@
 </div>
 
 
-<div class="container-fluid web-projects">
+<div class="row projects-portfolio">
+	
 	<div class="container">
 		
-		<h1 class="projects-header align-center">Our Recent Projects</h1>
+		<h1 class="projects-header sharubati-title align-center">Our Recent Projects</h1>
 
-		<div class="col-md-8 col-md-offset-2 projects-container">
+		<div class="col-md-10 col-md-offset-1 projects-holder">
+				
+				<div class="col-md-4">
+					<div class="project-holder">
+							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-02.jpg')}}" alt = "project image">
 
-			<div class="col-md-6">
-				<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail.jpg')}}" alt = "project image">
-			</div>
+						<div class="project-text-holder">
+							<h4 class="project-header sharubati-text">Umati Athletics</h4>
+							<h5 class="gray-text byline sharubati-text"><b>Tags: </b>Brand development, direction, graphic design</h5>
 
-			<div class="col-md-6 project-holder">
-				<h3 class="project-header">Bank Nyumbani</h3>
-				<h5 class="gray-text byline"><b>Tags:</b> <i>Brand development, direction, graphic design</i></h5>
-				<p class="project-text">Nit facimint qui aut opta quisita temporum dem volorati doles ma experferibus et haruntiam earum fugita poreperit quatia volenda conet am, culpa nisqui sanietur aut renis dolor modigniet atur, nonetur sundi doluptium </p>
+							
 
-				<button type="submit" class="sharubati-button pull-right"><b>view full project</b><i class="fa fa-arrow-right"></i></button>
-			</div>
-		</div>
+								<div class="project-button-holder">
+									<p class="gray-text sharubati-text">Posted a week ago</p>
+									<a class="sharubati-text blue" href="https://www.behance.net/gallery/58701937/Umati-Athletics">View Project <i class="fa fa-arrow-right"></i></a>
+								</div>
 
-		<div class="col-md-8 col-md-offset-2 projects-container">
-			
-			<div class="col-md-6">
-				<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail.jpg')}}" alt = "project image">
-			</div>
+						</div>
+					</div>
+				</div>
 
-			<div class="col-md-6 project-holder">
-				<h3 class="project-header">Bank Nyumbani</h3>
-				<h5 class="gray-text byline"><b>Tags:</b> <i>Brand development, direction, graphic design</i></h5>
-				<p class="project-text">Nit facimint qui aut opta quisita temporum dem volorati doles ma experferibus et haruntiam earum fugita poreperit quatia volenda conet am, culpa nisqui sanietur aut renis dolor modigniet atur, nonetur sundi doluptium </p>
+				<div class="col-md-4">
+					<div class="project-holder">
+							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-02.jpg')}}" alt = "project image">
 
-				<button type="submit" class="sharubati-button pull-right"><b>view full project</b><i class="fa fa-arrow-right"></i></button>
-			</div>
-		</div>
+						<div class="project-text-holder">
+							<h4 class="project-header sharubati-text">Umati Athletics</h4>
+							<h5 class="gray-text byline sharubati-text"><b>Tags: </b>Brand development, direction, graphic design</h5>
 
-		<div class="col-md-8 col-md-offset-2 projects-container">
+							
 
-			<div class="col-md-6">
-				<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail.jpg')}}" alt = "project image">
-			</div>
+								<div class="project-button-holder">
+									<p class="gray-text sharubati-text">Posted a week ago</p>
+									<a class="sharubati-text blue" href="https://www.behance.net/gallery/58701937/Umati-Athletics">View Project <i class="fa fa-arrow-right"></i></a>
+								</div>
 
-			<div class="col-md-6 project-holder">
-				<h3 class="project-header">Bank Nyumbani</h3>
-				<h5 class="gray-text byline"><b>Tags:</b> <i>Brand development, direction, graphic design</i></h5>
-				<p class="project-text">Nit facimint qui aut opta quisita temporum dem volorati doles ma experferibus et haruntiam earum fugita poreperit quatia volenda conet am, culpa nisqui sanietur aut renis dolor modigniet atur, nonetur sundi doluptium </p>
+						</div>
+					</div>
+				</div>
 
-				<button type="submit" class="sharubati-button pull-right"><b>view full project</b><i class="fa fa-arrow-right"></i></button>
-			</div>
+				<div class="col-md-4">
+					<div class="project-holder">
+							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-02.jpg')}}" alt = "project image">
+
+						<div class="project-text-holder">
+							<h4 class="project-header sharubati-text">Umati Athletics</h4>
+							<h5 class="gray-text byline sharubati-text"><b>Tags: </b>Brand development, direction, graphic design</h5>
+
+							
+
+								<div class="project-button-holder">
+									<p class="gray-text sharubati-text">Posted a week ago</p>
+									<a class="sharubati-text blue" href="https://www.behance.net/gallery/58701937/Umati-Athletics">View Project <i class="fa fa-arrow-right"></i></a>
+								</div>
+
+						</div>
+					</div>
+				</div>
+
 		</div>
 
 	</div>

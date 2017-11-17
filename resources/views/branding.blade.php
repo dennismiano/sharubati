@@ -6,7 +6,7 @@
 
 		<div class="col-md-4 header-article-container pull-right">
 			<img class="speech-mark" src = "{{ URL::asset('/images/syde-images/quotes.png')}}" alt = "speech marks">
-			<h3 class="sharubati-title pages-header-text gray-text">Brand is the story behind your product or business. Its the value you propose to your customers. And we are helping businesses tell <b> a better story.</b></h3>
+			<h3 class="sharubati-title pages-header-text blue">Brand is the story behind your product or business. Its the value you propose to your customers. And we are helping businesses tell <b> a better story.</b></h3>
 		</div>
 	</div>
 </div>
@@ -18,7 +18,7 @@
 <div class="row pages-content">
 	<div class="container pages-container">
 		<div class="col-md-8 pages-text-container">
-			<h3 class="page-content-title sharubati-title blue">We believe a brand goes beyond crafting a unique identity, but we also recognize that identity is the first way to differentiate from the pack, it sets a direction, a guide that helps avoid ambiguity.</h3>
+			<h3 class="page-content-title sharubati-title">We believe a brand goes beyond crafting a unique identity, but we also recognize that identity is the first way to differentiate from the pack, it sets a direction, a guide that helps avoid ambiguity.</h3>
 
 			<p class="page-text sharubati-text">Can you imagine how marketing used to be when brands never existed? There was no way for customers to identify a product they had desired. Gaining and retaining customers must have neen difficult. But since the evolution of brands, you can tell the story behind your product or business and why you are different. And we help you communicate that in a visually appealing way. </p>
 
@@ -63,15 +63,22 @@
 		<h1 class="projects-header sharubati-title align-center">Our Recent Projects</h1>
 
 		<div class="col-md-10 col-md-offset-1 projects-holder">
+				
 				<div class="col-md-4">
 					<div class="project-holder">
-							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-03.jpg')}}" alt = "project image">
+							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-02.jpg')}}" alt = "project image">
 
 						<div class="project-text-holder">
-							<h3 class="project-header sharubati-title">Bank Nyumbani</h3>
-							<h5 class="gray-text byline sharubati-text"><b>Tags:</b> <i>Brand development, direction, graphic design</i></h5>
+							<h4 class="project-header sharubati-text">Umati Athletics</h4>
+							<h5 class="gray-text byline sharubati-text"><b>Tags: </b>Brand development, direction, graphic design</h5>
 
-							<a class="sharubati-text" href="https://www.behance.net/gallery/58702725/Bank-Nyumbani"><b>View Project </b><i class="fa fa-arrow-right"></i></a>
+							
+
+								<div class="project-button-holder">
+									<p class="gray-text sharubati-text">Posted a week ago</p>
+									<a class="sharubati-text blue" href="https://www.behance.net/gallery/58701937/Umati-Athletics">View Project <i class="fa fa-arrow-right"></i></a>
+								</div>
+
 						</div>
 					</div>
 				</div>
@@ -81,23 +88,35 @@
 							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-02.jpg')}}" alt = "project image">
 
 						<div class="project-text-holder">
-							<h3 class="project-header sharubati-title">Umati Athletics</h3>
-							<h5 class="gray-text byline sharubati-text"><b>Tags:</b> <i>Brand development, direction, graphic design</i></h5>
+							<h4 class="project-header sharubati-text">Umati Athletics</h4>
+							<h5 class="gray-text byline sharubati-text"><b>Tags: </b>Brand development, direction, graphic design</h5>
 
-							<a class="sharubati-text" href="https://www.behance.net/gallery/58701937/Umati-Athletics"><b>View Project </b><i class="fa fa-arrow-right"></i></a>
+							
+
+								<div class="project-button-holder">
+									<p class="gray-text sharubati-text">Posted a week ago</p>
+									<a class="sharubati-text blue" href="https://www.behance.net/gallery/58701937/Umati-Athletics">View Project <i class="fa fa-arrow-right"></i></a>
+								</div>
+
 						</div>
 					</div>
 				</div>
 
 				<div class="col-md-4">
 					<div class="project-holder">
-							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail.jpg')}}" alt = "project image">
+							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-02.jpg')}}" alt = "project image">
 
 						<div class="project-text-holder">
-							<h3 class="project-header sharubati-title">Bank Nyumbani</h3>
-							<h5 class="gray-text byline sharubati-text"><b>Tags:</b> <i>Brand development, direction, graphic design</i></h5>
+							<h4 class="project-header sharubati-text">Umati Athletics</h4>
+							<h5 class="gray-text byline sharubati-text"><b>Tags: </b>Brand development, direction, graphic design</h5>
 
-							<a class="sharubati-text"><b>View Project </b><i class="fa fa-arrow-right"></i></a>
+							
+
+								<div class="project-button-holder">
+									<p class="gray-text sharubati-text">Posted a week ago</p>
+									<a class="sharubati-text blue" href="https://www.behance.net/gallery/58701937/Umati-Athletics">View Project <i class="fa fa-arrow-right"></i></a>
+								</div>
+
 						</div>
 					</div>
 				</div>
