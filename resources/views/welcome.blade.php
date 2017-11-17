@@ -10,17 +10,19 @@
         <link href="{{ URL::asset('/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{ URL::asset('/css/syde.css')}}" rel="stylesheet">
         <link href="{{ URL::asset('/css/infinite-slider.css')}}" rel="stylesheet">
+        <link href="{{ URL::asset('/css/animation.css')}}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway|Sanchez" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <script src="/js/jquery-3.2.1.min.js"></script>
-        <script src="/js/jquery-ui.min.js"></script>
-        <script  src="/js/user/user.js"></script>
-        <script  src="/js/ajax/get.js"></script>
-        <script  src="/js/bootstrap.bundle.js"></script>
+        <script src="{{ URL::asset('/js/jquery-3.2.1.min.js')}}"></script>
+        <script src="{{ URL::asset('/js/jquery-ui.min.js')}}"></script>
+        <script src="{{ URL::asset('/js/user/user.js')}}"></script>
+        <script src="{{ URL::asset('/js/ajax/get.js')}}"></script>
+        <script src="{{ URL::asset('/js/bootstrap.bundle.js')}}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
         <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
-        <script src="/js/carousel.js"></script>
+        <script src="{{ URL::asset('/js/carousel.js')}}"></script>
+        <script src="{{ URL::asset('/js/animations.js')}}"></script>
        
         
             <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -118,17 +120,20 @@
        
         <div class="row main-services result_get">
             <div class="container">
-                <div class="col-md-4">
-                    <h3 class="services-header">We are the perfect blend of aesthetics and function. And  we say it in the solutions we give</h3>
-                    <img class="border-bar img-responsive" src = "{{ URL::asset('/images/syde-images/border-bar.png')}}" alt = "computer with design elements">
-                    <p class="sharubati-text services-text">   We design custom solutions with your business in mind. We have what it takes to grow your brand both on print and display. We also craft custom  tools to help your business run efficiently.
-                        Business requirements are different and we have the creativity and analytical thinking to implement your business strategy in a way that your business enjoys value for money.
+                <div class="col-md-4 animation-element bounce-up">
+                    <div class="subject">
+                        <h3 class="services-header">We are the perfect blend of aesthetics and function. And  we say it in the solutions we give</h3>
+                        <img class="border-bar img-responsive" src = "{{ URL::asset('/images/syde-images/border-bar.png')}}" alt = "computer with design elements">
+                        <p class="sharubati-text services-text">   We design custom solutions with your business in mind. We have what it takes to grow your brand both on print and display. We also craft custom  tools to help your business run efficiently.
+                            Business requirements are different and we have the creativity and analytical thinking to implement your business strategy in a way that your business enjoys value for money.
+                    </p>
+                    </div>
                 </div>
 
                 <div class="col-md-8 services-box">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="services-container coloured-border">
+                        <div class="col-md-4 animation-element bounce-up in-view">
+                            <div class="services-container subject">
                                 <img class="services-icon img-responsive" src = "{{ URL::asset('/images/syde-images/design-icon.png')}}" alt = "design-icon">
                                 <h4 class="services-title"><b>DESIGN</b></h4>
                                 <p class="sharubati-text">If you are looking for that high quality work that makes your business stand out and gives your brand an appealing identity, we are the team you need;
@@ -141,8 +146,8 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="services-container">
+                        <div class="col-md-4 animation-element bounce-up in-view">
+                            <div class="services-container subject">
                                 <img class="services-icon img-responsive" src = "{{ URL::asset('/images/syde-images/devops-icon.png')}}" alt = "devops-icon">
                                 <h4 class="services-title"><b>DEVELOPMENT</b></h4>
                                 <p class="sharubati-text">Whether its a website, a web application or a custom business software, we have a professional team of designers and developers  that collaborates to deliver solutions that are functional and scalable.
@@ -155,8 +160,8 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="services-container">
+                        <div class="col-md-4 animation-element bounce-up in-view">
+                            <div class="services-container subject">
                                 <img class="services-icon img-responsive" src = "{{ URL::asset('/images/syde-images/strategy-icon.png')}}" alt = "strategy-icon">
                                 <h4 class="services-title"><b>STRATEGY</b></h4>
                                 <p class="sharubati-text">Data driven strategy to increase leads and conversions. We use a combinations of tools and media, a deep insight into buyer behavior to inform your digital options
