@@ -80,7 +80,7 @@
 	
 	/*background-image: url("/images/syde-images/images/hero-image.jpg");*/
 	background-image: url("/images/syde-images/hero-image.jpg");
-	height:500px;
+	height:600px;
 	background-size: cover;
 	background-position: center;
 	overflow:hidden;
@@ -99,10 +99,11 @@
 	padding-left: 30px;
 
 }
-.hero-text-container{
-	margin-top: 250px;
-}
 
+.hero-stuff-holder{
+	position: relative;
+	top:180px;
+}
 .hero-button{
 	padding:15px 30px;
 	background: red; /* For browsers that do not support gradients */

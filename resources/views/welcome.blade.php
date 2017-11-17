@@ -23,6 +23,7 @@
         <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
         <script src="{{ URL::asset('/js/carousel.js')}}"></script>
         <script src="{{ URL::asset('/js/animations.js')}}"></script>
+        <script src="{{ URL::asset('/js/jquery.enllax.js')}}"></script>
        
         
             <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -88,10 +89,9 @@
 <!--ABOVE FOLD-->
               <div class="row above-fold">
                  
-                    <div class="container">
+                    <div class="container hero-stuff-holder" data-enllax-ratio=".4" data-enllax-type="foreground">
                         <div class="hero-text-container">
-                            <h1 class="hero-title align-center blue write"></h1>
-                            
+                            <h1 class="hero-title align-center blue write"></h1>   
                         </div>
 
                         <div class="text-center">
@@ -345,6 +345,27 @@
                                 </div>  
         </div>
     </div>
+
+    <script>
+
+        (function($){
+            
+            //Plugin activation
+            $(window).enllax();
+            
+//            $('#some-id').enllax();
+            
+//            $('selector').enllax({
+//                type: 'background', // 'foreground'
+//                ratio: 0.5,
+//                direction: 'vertical' // 'horizontal'
+//            });
+            
+        })(jQuery);
+
+
+
+    </script>
     </body>
 </html>
 
