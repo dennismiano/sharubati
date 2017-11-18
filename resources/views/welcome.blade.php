@@ -121,7 +121,7 @@
         <div class="row main-services result_get">
             <div class="container">
                 <div class="col-md-4 animation-element bounce-up">
-                    <div class="subject">
+                    <div class="subject services-statement">
                         <h3 class="services-header">We are the perfect blend of aesthetics and function. And  we say it in the solutions we give</h3>
                         <img class="border-bar img-responsive" src = "{{ URL::asset('/images/syde-images/border-bar.png')}}" alt = "computer with design elements">
                         <p class="sharubati-text services-text">   We design custom solutions with your business in mind. We have what it takes to grow your brand both on print and display. We also craft custom  tools to help your business run efficiently.
@@ -138,9 +138,9 @@
                                 <h4 class="services-title"><b>DESIGN</b></h4>
                                 <p class="sharubati-text">If you are looking for that high quality work that makes your business stand out and gives your brand an appealing identity, we are the team you need;
                                     <ul>
-                                        <li class="sharubati-text"><a href="branding">Branding</a></li>
-                                        <li class="sharubati-text"><a class="nav_user" 
-                                        href="/design-and-print">Print</a></li>
+                                        <li class="sharubati-text"><a class="nav_user blue" href="/branding">Design and Branding</a></li>
+                                        <li class="sharubati-text"><a class="nav_user blue" 
+                                        href="/design-and-print">Print Design</a></li>
                                     </ul>
                                 </p>
                             </div>
@@ -152,8 +152,8 @@
                                 <h4 class="services-title"><b>DEVELOPMENT</b></h4>
                                 <p class="sharubati-text">Whether its a website, a web application or a custom business software, we have a professional team of designers and developers  that collaborates to deliver solutions that are functional and scalable.
                                     <ul>
-                                        <li class="sharubati-text"><a  class="nav-user" href="web">Web systems</a></li>
-                                        <li class="sharubati-text"><a href="development">Custom Enterprise Software</a></li>
+                                        <li class="sharubati-text"><a  class="nav_user blue" href="/web">Web systems</a></li>
+                                        <li class="sharubati-text"><a class="nav_user blue" href="/development">Custom Enterprise Software</a></li>
                                     </ul>
 
                                 </p>
@@ -166,9 +166,9 @@
                                 <h4 class="services-title"><b>STRATEGY</b></h4>
                                 <p class="sharubati-text">Data driven strategy to increase leads and conversions. We use a combinations of tools and media, a deep insight into buyer behavior to inform your digital options
                                     <ul>
-                                        <li class="sharubati-text"><a href="digital-marketing">Content Marketing</a></li>
-                                        <li class="sharubati-text"><a href="digital-marketing">Social Media Marketing</a></li>
-                                        <li class="sharubati-text"><a href="digital-marketing">Search Marketing (SEO, SEM)</a></li>
+                                        <li class="sharubati-text"><a class="nav_user blue" href="/digital-marketing">Content Marketing</a></li>
+                                        <li class="sharubati-text"><a class="nav_user blue" href="/digital-marketing">Social Media Marketing</a></li>
+                                        <li class="sharubati-text"><a class="nav_user blue" href="/digital-marketing">Search Marketing (SEO, SEM)</a></li>
                                     </ul>
                                 </p>
                         </div>
@@ -180,20 +180,17 @@
 
 <!--MORE ABOUT US-->
         
-        <div class="row more">
+    <div class="row more animation-element bounce-up in-view">
+        <img class="img-responsive more-background subject" src = "{{ URL::asset('/images/syde-images/designer-desk.png')}}" alt = "designer-desk">
             <div class="container">
-                    <div class="row more-container">
-                        <div class="col-md-8 text-container">
-
-                            <img class="img-responsive more-background" src = "{{ URL::asset('/images/syde-images/designer-desk.png')}}" alt = "designer-desk">
-
-                            <h2 class="more-title blue sharubati-title">You can <b>trust us</b> to get the <b>job done.</b></br> Our solutions are not a cost, they are an <b>investment.</b></h2>
-                            <p class="gray-text more-text sharubati-text">We are consciuos of cost and deadlines. We understand how much value you expect for your money and thats why  are backed by a creative and professional team that will see to it that you get just that.
+                        <div class="col-md-8 more-text-container">
+                            <h2 class="more-title blue sharubati-title subject">You can <b>trust us</b> to get the <b>job done.</b></br> We are professionals at what we do which makes us an <b>investment and</b> not a cost.</h2>
+                            <p class="gray-text more-text sharubati-text subject">We are consciuos of cost and deadlines. We understand how much value you expect for your money and thats why we make it our business to deliver nothing short of impressive. Paying attention to every detail of your project and considerations for the ultimate user or audience.</br></br> At Sharubati we have a creative and professional team that will see to it that you get viable solutions for your business.
                             So trust us with your job, we have designers, developers and marketers to ensure your job is given an all round perspective.</p>
                         </div>
 
 
-                        <div class="col-md-4 form-bg">
+                        <div class="col-md-4 form-bg subject">
         
                                 <div class="row form-header">
                                     <h2 class="form-title sharubati-title white">Lets Talk Business</h2>
@@ -216,32 +213,31 @@
                                       <button type="submit" class="sharubati-button sharubati-title pull-right"><b>A few more details</b> <i class="fa fa-paper-plane"></i></button>
                                     </form>
                                 </div>
-                        </div>
-                    </div>
-                    
+                        </div>                  
             </div>
     </div>
+<!--MORE ABOUT US-->
 
         <div class="row testimony">
-            <div class="container">
-                <h2 class="testimonial-header sharubati-title" >What Our Customers Say About Us</h2>
+            <div class="container animation-element bounce-up">
+                <h2 class="testimonial-header sharubati-title subject blue">What Our Customers Say About Us</h2>
                 
                 <div class="col-md-8 col-md-offset-2">
 
-                        <img class="img-resonsive testimony-icon" src = "{{ URL::asset('/images/syde-images/testimony-speech-marks.png')}}" alt = "speech-marks">
+                        <img class="img-resonsive testimony-icon subject" src = "{{ URL::asset('/images/syde-images/testimony-speech-marks.png')}}" alt = "speech-marks">
 
-                            <p class="testimony-text sharubati-text align-center">
+                            <p class="testimony-text sharubati-text align-center subject">
                                 When i was setting up, i needed a consultant who would help me appropiately position the brand and give it that unique identity.  <b>Sharubati Technologies</b> brought the business brand to life and implemented an effective way to gain awareness fast and i was amazed at how easily we hit our set threshold.<br><b>~ Oliver, Autokey.</b>
                             </p>
                 </div>
             </div>
         </div>
 
-    <div class="row client-logos">
+    <div class="row client-logos animation-element bounce-up">
 
-            <h2 class="clients-header sharubati-title">Some of the brands we have worked with.</h2>
+            <h2 class="clients-header sharubati-title blue subject">Some brands we have worked with.</h2>
             <div class="container">
-              <section class="customer-logos slider">
+              <section class="customer-logos slider subject">
                 <div class="slide"><img src="{{ URL::asset('/images/syde-images/omega-logo.png')}}"></div>
                 <div class="slide"><img src="{{ URL::asset('/images/syde-images/pace-logo.png')}}"></div>
                 <div class="slide"><img src="{{ URL::asset('/images/syde-images/techguy-logo.png')}}"></div>
@@ -257,11 +253,11 @@
 
 
 <div class="row subscribe">
-    <div class="container">
+    <div class="container animation-element bounce-up">
         <div class="col-md-10 col-md-offset-1">
-            <h3 class="white align-center subcriber-statement sharubati-title"><b>The Digital World</b> is exploding with <b>new information</b> everyday and we have made it our business to keep you informed and offer insights for your business.</br> Join our growing list of subscribers.</h3>
+            <h3 class="white align-center subcriber-statement sharubati-title subject"><b>The Digital World</b> is exploding with <b>new information</b> everyday and we have made it our business to keep you informed and offer insights for your business.</br> Join our growing list of subscribers.</h3>
 
-            <div class="subscriber-form col-md-8 col-md-offset-2">
+            <div class="subscriber-form col-md-8 col-md-offset-2 subject">
                     <form class="sub_form form-inline">
                         <div class="form-group col-md-8">
 					       {{csrf_field()}}
@@ -278,18 +274,18 @@
 </div>
 
 <div class="row footer">
-    <div class="container">
-        <div class="col-md-4 footer-container">
+    <div class="container animation-element bounce-up">
+        <div class="col-md-4 footer-container subject">
             <h1 class="sharubati-title">Who We Are</h1>
-            <p class="sharubati-text footer-text"><b>Sharubati Technologies</b> is an IT consulting firm based in Nairobi and was set up to offer 360 degrees digital solutions to our customers. From design, print, brand origination, UX/UI, web, software development,  digital strategy and marketing, data handling and analytics. 
+            <p class="sharubati-text footer-text"><b>Sharubati Technologies</b> is a Creative and IT consulting firm based in Nairobi and was set up to offer 360 degrees digital solutions to our customers. From design, print, brand origination, UX/UI, web, software development,  digital strategy and marketing, data handling and analytics. 
             </p>
 
-            <h4 class="sharubati-text"><b>Sharubati Technologies Ltd.</b></h4>
+            <h4 class="sharubati-text "><b>Sharubati Technologies Ltd.</b></h4>
             <p class="sharubati-text"><i class="fa fa-phone-square"></i> +254 725 131 565 (Dennis)</h5>
             <p class="sharubati-text"><i class="fa fa-phone-square"></i> +254 724 209162 (Sydney)</h5>
         </div>
 
-        <div class="col-md-4 footer-container">
+        <div class="col-md-4 footer-container subject">
             <h1 class="sharubati-title">We Are Social</h1>
             <p class="sharubati-text footer-text">Every so often we share our wisdom gained from work experience with our followers on social media pages. </p>
             
@@ -301,7 +297,7 @@
             </div>
         </div>
 
-        <div class="col-md-4 ms_leave">
+        <div class="col-md-4 ms_leave subject">
                             <div class="row form-header">
                                     <h2 class="form-title sharubati-title white">Contact us</h2>
                                 </div>

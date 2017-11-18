@@ -2,10 +2,10 @@
 
 .bounce-up .subject {
   opacity: 0;
-  -moz-transition: all 700ms ease-out;
-  -webkit-transition: all 700ms ease-out;
-  -o-transition: all 700ms ease-out;
-  transition: all 700ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
   -moz-transform: translate3d(0px, 50px, 0px);
   -webkit-transform: translate3d(0px, 50px, 0px);
   -o-transform: translate(0px, 50px);
@@ -23,4 +23,8 @@
   -o-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
+}
+
+.fadein .subject{
+
 }
