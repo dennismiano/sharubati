@@ -1,10 +1,10 @@
 <div class="row pages-header">
-	<div class="container">
+	<div class="container animation-element bounce-up">
 		<div class="col-md-4">
-			<h1 class="pages-header-title sharubati-title">Branding </br><b>& Marketing</b></h1>
+			<h1 class="pages-header-title sharubati-title subject">Branding </br><b>& Marketing</b></h1>
 		</div>
 
-		<div class="col-md-4 header-article-container pull-right">
+		<div class="col-md-4 header-article-container pull-right subject">
 			<img class="speech-mark" src = "{{ URL::asset('/images/syde-images/quotes.png')}}" alt = "speech marks">
 			<h3 class="sharubati-title pages-header-text blue">Brand is the story behind your product or business. Its the value you propose to your customers. And we are helping businesses tell <b> a better story.</b></h3>
 		</div>
@@ -17,15 +17,18 @@
 
 <div class="row pages-content">
 	<div class="container pages-container">
-		<div class="col-md-8 pages-text-container">
-			<h3 class="page-content-title sharubati-title">We believe a brand goes beyond crafting a unique identity, but we also recognize that identity is the first way to differentiate from the pack, it sets a direction, a guide that helps avoid ambiguity.</h3>
+		<div class="col-md-8 pages-text-container animation-element bounce-up">
+			<div class="subject">
+				<h3 class="page-content-title sharubati-title">We believe that building a brand goes beyond crafting a unique identity, but we also recognize that giving your business an identity is the first way to differentiate you from the pack.</h3>
 
-			<p class="page-text sharubati-text">Can you imagine how marketing used to be when brands never existed? There was no way for customers to identify a product they had desired. Gaining and retaining customers must have neen difficult. But since the evolution of brands, you can tell the story behind your product or business and why you are different. And we help you communicate that in a visually appealing way. </p>
+				<p class="page-text sharubati-text">The business environment is getting noisier by the day, and making it more difficult for brands to be seen. Its increasingly becoming important for businesses to invest in building their brands and focusing their brand promise for clarity to the customer. In todays competitive business environment the only way a business can hope to stand out is to invest in building a formidable brand. </br>Lucky for you, we build for businesses, identities that are timeless, relevant and memorable. We work with consultations with the client to ensure that, your brand stands out and the message you intend to communicate is clear.We also suggest cost effective ways to build it from there, through a rigorous, innovative and effective marketing campaign </p>
+			</div>
 
 		</div>
 
-		<div class="col-md-4 pages-form-container">
-		
+		<div class="col-md-4 pages-form-container animation-element bounce-up">
+						
+						<div class="subject">
 			 					<div class="row form-header">
                                     <h2 class="form-title sharubati-title white">Lets talk Business</h2>
                                 </div>
@@ -50,6 +53,7 @@
                                       <button type="submit" class="sharubati-button pull-right sharubati-text"><b>A few more details</b><i class="fa fa-arrow-right"></i></button>
                                     </form>
                                 </div>
+                        </div>
             </div>
 	</div>
 
@@ -60,12 +64,12 @@
 	
 	<div class="container">
 		
-		<h1 class="projects-header sharubati-title align-center">Our Recent Projects</h1>
+		<h1 class="projects-header sharubati-title align-center subject">Our Recent Projects</h1>
 
 		<div class="col-md-10 col-md-offset-1 projects-holder">
 				
-				<div class="col-md-4">
-					<div class="project-holder">
+				<div class="col-md-4 animation-element bounce-up">
+					<div class="project-holder subject">
 							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-02.jpg')}}" alt = "project image">
 
 						<div class="project-text-holder">
@@ -83,8 +87,8 @@
 					</div>
 				</div>
 
-				<div class="col-md-4">
-					<div class="project-holder">
+				<div class="col-md-4 animation-element bounce-up">
+					<div class="project-holder subject">
 							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-02.jpg')}}" alt = "project image">
 
 						<div class="project-text-holder">
@@ -102,8 +106,8 @@
 					</div>
 				</div>
 
-				<div class="col-md-4">
-					<div class="project-holder">
+				<div class="col-md-4 animation-element bounce-up">
+					<div class="project-holder subject">
 							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-02.jpg')}}" alt = "project image">
 
 						<div class="project-text-holder">
@@ -126,3 +130,4 @@
 	</div>
 </div>
 
+<script src="{{ URL::asset('/js/animations.js')}}"></script>

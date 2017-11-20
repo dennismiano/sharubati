@@ -1,10 +1,10 @@
 <div class="row pages-header">
-	<div class="container">
+	<div class="container animation-element bounce-up">
 		<div class="col-md-4">
-			<h1 class="pages-header-title sharubati-title">Design</br><b>& Print </b></h1>
+			<h1 class="pages-header-title sharubati-title subject">Design</br><b>& Print </b></h1>
 		</div>
 
-		<div class="col-md-4 header-article-container pull-right">
+		<div class="col-md-4 header-article-container pull-right subject">
 			<img class="speech-mark" src = "{{ URL::asset('/images/syde-images/quotes.png')}}" alt = "speech marks">
 			<h3 class="sharubati-title pages-header-text blue">Unfortunately in business, customers judge a book by the cover. And usually if they dont like how it looks, then they dont like it at all.</h3>
 		</div>
@@ -12,8 +12,8 @@
 </div>
 
 <div class="row pages-content">
-	<div class="container pages-container">
-		<div class="col-md-8 pages-text-container">
+	<div class="container pages-container animation-element bounce-up">
+		<div class="col-md-8 pages-text-container subject">
 			<h3 class="page-content-title sharubati-title">We take a lot of pride in seeing a project through to completion, from the idea stage to execution. That way, we can guarantee the quality of the final work.</h3>
 
 			<p class="page-text sharubati-text">Thats why we have a streamlined design process that ensures your project brief is executed within timelines and a pool of creatives to bring that idea to life.
@@ -23,7 +23,8 @@
 
 		</div>
 
-		<div class="col-md-4 pages-form-container">
+		<div class="col-md-4 pages-form-container animation-element bounce-up">
+							<div class="subject">
 		
 			 					<div class="row form-header">
                                     <h2 class="form-title sharubati-title white">Lets talk Business</h2>
@@ -46,9 +47,10 @@
                                         <input type="text" class="form-control no-border sharubati-text" id="budget" placeholder="What about a deadline?">
                                       </div>
 
-                                      <button type="submit" class="sharubati-button pull-right sharubati-text"><b>A few more details</b><i class="fa fa-arrow-right"></i></button>
+                                      <button type="submit" class="sharubati-button pull-right sharubati-text"><b>A few more details</b> <i class="fa fa-arrow-right"></i></button>
                                     </form>
                                 </div>
+                            </div>
             </div>
 		</div>
 
@@ -59,12 +61,12 @@
 	
 	<div class="container">
 		
-		<h1 class="projects-header sharubati-title align-center">Our Recent Projects</h1>
+		<h1 class="projects-header sharubati-title align-center subject">Our Recent Projects</h1>
 
 		<div class="col-md-10 col-md-offset-1 projects-holder">
 				
-				<div class="col-md-4">
-					<div class="project-holder">
+				<div class="col-md-4 animation-element bounce-up">
+					<div class="project-holder subject">
 							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-02.jpg')}}" alt = "project image">
 
 						<div class="project-text-holder">
@@ -82,8 +84,8 @@
 					</div>
 				</div>
 
-				<div class="col-md-4">
-					<div class="project-holder">
+				<div class="col-md-4 animation-element bounce-up">
+					<div class="project-holder subject">
 							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-02.jpg')}}" alt = "project image">
 
 						<div class="project-text-holder">
@@ -101,8 +103,8 @@
 					</div>
 				</div>
 
-				<div class="col-md-4">
-					<div class="project-holder">
+				<div class="col-md-4 animation-element bounce-up">
+					<div class="project-holder subject">
 							<img class="project-thumbnail" src = "{{ URL::asset('/images/syde-images/project-thumbnail-02.jpg')}}" alt = "project image">
 
 						<div class="project-text-holder">
@@ -124,3 +126,4 @@
 
 	</div>
 </div>
+<script src="{{ URL::asset('/js/animations.js')}}"></script>

@@ -64,7 +64,7 @@
                                 <a data-target="#" class="dropdown-toggle sharubati-nav-link sharubati-text" href="#" data-toggle="dropdown">solutions<b class="caret"></b></a>
 
                                 <ul class="dropdown-menu">
-                                    <li class="sharubati-text"><a class="nav_user" data-target="#" href="/design-and-print">Design and Print</a></li>
+                                    <li class="sharubati-text"><a class="nav_user" data-target="#" href="design-and-print">Design and Print</a></li>
                                     <li class="sharubati-text"><a class="nav_user" data-target="#" href="branding">Brand & Marketing</a></li>
                                     <li class="sharubati-text"><a class="nav_user" data-target="#" href="web">Web design & Development</a></li>
                                     <li class="sharubati-text"><a class="nav_user" data-target="#" href="development">Enterprise Software Development</a></li>
@@ -104,7 +104,7 @@
 <script type="text/javascript">
     $(function(){
         $(".write").typed({
-            strings: ["We are building a whole new <b> Digital World<span>  ^500\n For Businesses </b>", "Using <b> Digital Tools </b> ^300\n to help businesses <b> grow and compete.</b>", "Building <b> Brands of the Future ^500\n Today </b>"],
+            strings: ["We are building a whole new <b> Digital World<span>  ^500\n For Businesses </b>", "Using <b> Digital Tools </b> ^300\n to help businesses <b> grow and compete.</b>", "Building <b> Brands of the Future. ^500\n Today </b>"],
             typeSpeed: 0,
             loop: true,
             loopCount: false,
@@ -138,9 +138,9 @@
                                 <h4 class="services-title"><b>DESIGN</b></h4>
                                 <p class="sharubati-text">If you are looking for that high quality work that makes your business stand out and gives your brand an appealing identity, we are the team you need;
                                     <ul>
-                                        <li class="sharubati-text"><a class="nav_user blue" href="/branding">Design and Branding</a></li>
+                                        <li class="sharubati-text"><a class="nav_user blue" href="branding">Design and Branding</a></li>
                                         <li class="sharubati-text"><a class="nav_user blue" 
-                                        href="/design-and-print">Print Design</a></li>
+                                        href="design-and-print">Print Design</a></li>
                                     </ul>
                                 </p>
                             </div>
@@ -152,8 +152,8 @@
                                 <h4 class="services-title"><b>DEVELOPMENT</b></h4>
                                 <p class="sharubati-text">Whether its a website, a web application or a custom business software, we have a professional team of designers and developers  that collaborates to deliver solutions that are functional and scalable.
                                     <ul>
-                                        <li class="sharubati-text"><a  class="nav_user blue" href="/web">Web systems</a></li>
-                                        <li class="sharubati-text"><a class="nav_user blue" href="/development">Custom Enterprise Software</a></li>
+                                        <li class="sharubati-text"><a  class="nav_user blue" href="web">Web systems</a></li>
+                                        <li class="sharubati-text"><a class="nav_user blue" href="development">Custom Enterprise Software</a></li>
                                     </ul>
 
                                 </p>
@@ -166,9 +166,9 @@
                                 <h4 class="services-title"><b>STRATEGY</b></h4>
                                 <p class="sharubati-text">Data driven strategy to increase leads and conversions. We use a combinations of tools and media, a deep insight into buyer behavior to inform your digital options
                                     <ul>
-                                        <li class="sharubati-text"><a class="nav_user blue" href="/digital-marketing">Content Marketing</a></li>
-                                        <li class="sharubati-text"><a class="nav_user blue" href="/digital-marketing">Social Media Marketing</a></li>
-                                        <li class="sharubati-text"><a class="nav_user blue" href="/digital-marketing">Search Marketing (SEO, SEM)</a></li>
+                                        <li class="sharubati-text"><a class="nav_user blue" href="digital-marketing">Content Marketing</a></li>
+                                        <li class="sharubati-text"><a class="nav_user blue" href="digital-marketing">Social Media Marketing</a></li>
+                                        <li class="sharubati-text"><a class="nav_user blue" href="digital-marketing">Search Marketing (SEO, SEM)</a></li>
                                     </ul>
                                 </p>
                         </div>
@@ -182,7 +182,7 @@
         
     <div class="row more animation-element bounce-up in-view">
         <img class="img-responsive more-background subject" src = "{{ URL::asset('/images/syde-images/designer-desk.png')}}" alt = "designer-desk">
-            <div class="container">
+            <div class="container animation-element bounce-up in-view">
                         <div class="col-md-8 more-text-container">
                             <h2 class="more-title blue sharubati-title subject">You can <b>trust us</b> to get the <b>job done.</b></br> We are professionals at what we do which makes us an <b>investment and</b> not a cost.</h2>
                             <p class="gray-text more-text sharubati-text subject">We are consciuos of cost and deadlines. We understand how much value you expect for your money and thats why we make it our business to deliver nothing short of impressive. Paying attention to every detail of your project and considerations for the ultimate user or audience.</br></br> At Sharubati we have a creative and professional team that will see to it that you get viable solutions for your business.
@@ -274,30 +274,35 @@
 </div>
 
 <div class="row footer">
-    <div class="container animation-element bounce-up">
-        <div class="col-md-4 footer-container subject">
-            <h1 class="sharubati-title">Who We Are</h1>
-            <p class="sharubati-text footer-text"><b>Sharubati Technologies</b> is a Creative and IT consulting firm based in Nairobi and was set up to offer 360 degrees digital solutions to our customers. From design, print, brand origination, UX/UI, web, software development,  digital strategy and marketing, data handling and analytics. 
-            </p>
+    <div class="container">
+        <div class="col-md-4 footer-container animation-element bounce-up">
+            <div class="subject">
+                <h1 class="sharubati-title">Who We Are</h1>
+                <p class="sharubati-text footer-text"><b>Sharubati Technologies</b> is a Creative and IT consulting firm based in Nairobi and was set up to offer 360 degrees digital solutions to our customers. From design, print, brand origination, UX/UI, web, software development,  digital strategy and marketing, data handling and analytics. 
+                </p>
+            </div>
 
             <h4 class="sharubati-text "><b>Sharubati Technologies Ltd.</b></h4>
             <p class="sharubati-text"><i class="fa fa-phone-square"></i> +254 725 131 565 (Dennis)</h5>
             <p class="sharubati-text"><i class="fa fa-phone-square"></i> +254 724 209162 (Sydney)</h5>
         </div>
 
-        <div class="col-md-4 footer-container subject">
-            <h1 class="sharubati-title">We Are Social</h1>
-            <p class="sharubati-text footer-text">Every so often we share our wisdom gained from work experience with our followers on social media pages. </p>
-            
-            <div class="social-icons">
-                <a href=""><img class="social-icon" src = "{{ URL::asset('/images/syde-images/social-icons-02.png')}}" alt = "logo"></a>
-                <a href=""><img class="social-icon" src = "{{ URL::asset('/images/syde-images/social-icons-03.png')}}" alt = "logo"></a>
-                <a href=""><img class="social-icon" src = "{{ URL::asset('/images/syde-images/social-icons-04.png')}}" alt = "logo"></a>
-                <a href=""><img class="social-icon" src = "{{ URL::asset('/images/syde-images/social-icons-05.png')}}" alt = "logo"></a>
+        <div class="col-md-4 footer-container animation-element bounce-up">
+            <div class="subject">
+                <h1 class="sharubati-title">We Are Social</h1>
+                <p class="sharubati-text footer-text">Every so often we share our wisdom gained from work experience with our followers on social media pages. </p>
+                
+                <div class="social-icons">
+                    <a href=""><img class="social-icon" src = "{{ URL::asset('/images/syde-images/social-icons-02.png')}}" alt = "logo"></a>
+                    <a href=""><img class="social-icon" src = "{{ URL::asset('/images/syde-images/social-icons-03.png')}}" alt = "logo"></a>
+                    <a href=""><img class="social-icon" src = "{{ URL::asset('/images/syde-images/social-icons-04.png')}}" alt = "logo"></a>
+                    <a href=""><img class="social-icon" src = "{{ URL::asset('/images/syde-images/social-icons-05.png')}}" alt = "logo"></a>
+                </div>
             </div>
         </div>
 
-        <div class="col-md-4 ms_leave subject">
+        <div class="col-md-4 ms_leave animation-element bounce-up">
+            <div class="subject">
                             <div class="row form-header">
                                     <h2 class="form-title sharubati-title white">Contact us</h2>
                                 </div>
@@ -338,7 +343,8 @@
 
                                       <button type="button" class="sharubati-button pull-right msg_bt fm_btn"><b class="change">A few more details </b> <i class="fa fa-arrow-right"></i></button>
                                     </form>
-                                </div>  
+                                </div>
+                            </div> 
         </div>
     </div>
 
