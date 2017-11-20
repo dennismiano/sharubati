@@ -63,6 +63,14 @@ Route::get('/blog/cmt/{id}','blog@ad_cmt_form');
 Route::post('/blog/cmt','blog@ad_cmt_save');
 //return admin messages base view
 Route::get('/msg/view','messages@msg_view');
+//save proj details
+Route::post('/project/save','project@proj_save');
+//view project details
+Route::get('/project/show','project@view_proj');
+//view all subscribers 
+Route::get('/sub/show','subscribers@show_sub');
+
+
 
 
 //************END admin panel routes

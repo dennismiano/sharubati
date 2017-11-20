@@ -180,7 +180,7 @@
 
 <!--MORE ABOUT US-->
         
-    <div class="row more animation-element bounce-up in-view">
+    <div class="row more animation-element bounce-up in-view pro_leave">
         <img class="img-responsive more-background subject" src = "{{ URL::asset('/images/syde-images/designer-desk.png')}}" alt = "designer-desk">
             <div class="container animation-element bounce-up in-view">
                         <div class="col-md-8 more-text-container">
@@ -197,20 +197,30 @@
                                 </div>
 
                                 <div class="row more-form-body">
-                                     <form>
+                                     <form class="project_fm">
+                                     {{csrf_field()}}
                                       <div class="form-group">
-                                        <input type="text" class="form-control no-border sharubati-text" id="project-category" placeholder="What is your project about?">
+                                        <input type="text" class="form-control no-border sharubati-text" id="project-category" placeholder="What is your project about?" name="about">
                                       </div>
                                       
                                       <div class="form-group">
-                                        <input type="text" class="form-control no-border sharubati-text" id="budget" placeholder="Do you have a bugdet?">
+                                        <input type="text" class="form-control no-border sharubati-text"  placeholder="Do you have a bugdet?" name="budget">
                                       </div>
                                       
                                       <div class="form-group">
-                                        <input type="text" class="form-control no-border sharubati-text" id="budget" placeholder="What about a deadline?">
+                                        <input type="text" class="form-control no-border sharubati-text"  placeholder="What about a deadline?" name="deadline">
+                                      </div>
+                                      <div class="form-group proj_update"  hidden>
+                                        <input type="text" class="form-control no-border sharubati-text" placeholder="Name" name="name">
+                                      </div>
+                                      <div class="form-group proj_update" hidden>
+                                        <input type="email" class="form-control no-border sharubati-text" placeholder="Email" name="email">
+                                      </div>
+                                      <div class="form-group proj_update"  hidden>
+                                        <input type="text" class="form-control no-border sharubati-text" placeholder="Phone Number" name="phone">
                                       </div>
 
-                                      <button type="submit" class="sharubati-button sharubati-title pull-right"><b>A few more details</b> <i class="fa fa-paper-plane"></i></button>
+                                      <button type="button" class="sharubati-button sharubati-title pull-right pro_btn proje_btn"><b class="proj_change">A few more details</b> <i class="fa fa-paper-plane"></i></button>
                                     </form>
                                 </div>
                         </div>                  

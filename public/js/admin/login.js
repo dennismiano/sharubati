@@ -8,16 +8,12 @@ $(document).ready( function(){
 	$.ajax({
 			async:true,
 			type:"GET",
-			url:"/",
-			contentType:false,
-			processData:false,
-			data:d,
+			url:"/project/show",
 			error:function(data){
 				$("body").empty().html(data);
 			},
 			success:function(data){
-				$(".login_form").remove();
-				$("body").html(data);
+				$(".admin-content").empty().html(data);
 				
 			}
 			
@@ -269,5 +265,6 @@ $(document).ready( function(){
 		});
 		
 	}  );
+	//view
 
 }  );

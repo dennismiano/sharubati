@@ -162,4 +162,57 @@ $(document).ready( function(){
 		   
 	}   );
 
+	//add more proj details
+	$("body").on("click",".pro_btn",function(e){
+		    e.preventDefault();
+			e.stopImmediatePropagation();
+		   $(".proj_update").show(1000);
+		   $(".proj_change").text("send");
+		   $(this).attr({type:"submit"});
+		   $(this).toggleClass("pro_btn");
+		   
+	}   );
+	//reduce field of proj form
+	$("body").on("mouseleave",".pro_leave",function(e){
+		    e.preventDefault();
+			e.stopImmediatePropagation();
+		   $(".proj_update").hide(1000);
+		   $(".proj_change").text("A few more details");
+		   $(".proje_btn").attr({type:"button"});
+		   $(".proje_btn").toggleClass("pro_btn");
+		   
+	}   );
+	//save proj details
+	$("body").on("submit",".project_fm",function(e){
+			e.preventDefault();
+			e.stopImmediatePropagation();
+			var lg=$(this);
+			var da= new FormData(this);
+			$.ajax({
+				async:true,
+				type:"POST",
+				url:"/project/save",
+				data:da,
+				contentType:false,
+				processData:false,
+				error:function(data){
+					$(".magic").empty().html(data);
+				},
+				success:function(data){
+					alert(data);
+					lg[0].reset();
+					//alert("hit");
+					
+					//$(".msg_form")[0].reset();
+					
+				}
+				
+			}); 
+			//alert("hit");
+		   
+		   
+	}   );
+
+
+
 });

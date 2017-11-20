@@ -25,4 +25,8 @@ class subscribers extends Controller
 		}
 		
 	}
+	public function show_sub(){
+		$re=sub::orderBy("created_at","desc")->SimplePaginate(5);
+		return view("admin.subscribers",["sub"=>$re]);
+	}
 }
