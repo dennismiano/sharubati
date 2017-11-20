@@ -95,7 +95,7 @@ Route::get('digital-marketing', function () {
     return view('digital-marketing');
 });
 
-Route::get('dropdown-menu', function () {
-    return view('dropdown');
+Route::get('more', function () {
+    return view('moresection');
 });
 
