@@ -26,7 +26,7 @@
             		<div class="admin-panel-links pull-right">
 
             			
-            			<a class="nav_li" href="/admin-home">
+            			<a class="nav_li" href="/admin/home">
             				<img class="admin-panel-icon" src = "{{ URL::asset('/images/syde-images/admin-images/leads-01.png')}}" alt = "logo">
             			</a>
 

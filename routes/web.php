@@ -14,6 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//return home
+Route::get('/home', function () {
+    return view('home');
+});
+
 
 //blog user base view
 Route::get('/blog','blog@user_view');

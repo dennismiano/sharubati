@@ -1,8 +1,8 @@
 
-<div class="cmt_div">
+<div class="cmt_u " >
 @if( isset($id)  )
 	@if( $cmt->isNotEmpty() && isset($cmt) )
-		<div class="cmt_u">
+		<div >
 		@foreach($cmt as $value  )
 	         <div>
 	         posted:{{$value->created_at->diffForHumans()}}<br>

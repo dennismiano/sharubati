@@ -4,10 +4,27 @@ $(document).ready( function(){
 						'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')
 						}
 		});
+		
+			//load home	
+		$.ajax( {
+			async:true,
+			type:"GET",
+			url:"/home",
+			error:function(data){
+				$(".magic").empty().html(data);
+			},
+			success:function(data){
+				$(".magic").empty().html(data);
+				//alert(data);
+				
+			}
+			
+			
+		});
+	
 		//capture all user nav links
 			//capture all user nav links
-			
-	$(".nav_user").each( function(index){
+		$(".nav_user").each( function(index){
 		$(this).on("click",function(e){
 			e.preventDefault();
 		    e.stopImmediatePropagation();
@@ -72,8 +89,9 @@ $(document).ready( function(){
 				$(".cmt_u").empty().html(data);
 			},
 			success:function(data){
-				
-				lc.parents(".cmt_div").empty().html(data);
+				 //alert(data);
+				 $(".cmt_form")[0].reset();
+				lc.parents(".cmt_u").empty().html(data);
 				
 			}
 			
@@ -84,13 +102,13 @@ $(document).ready( function(){
 	//mouse out rm cmt 
 	$("body").on("mouseleave",".cmt_div",function(){
 		   $(this).remove();
-		   $(".u_b").show(5000);
+		   $(".u_b").show(500);
 	}   );
 	//msg form add more fields
 	$("body").on("click",".msg_bt",function(e){
 		    e.preventDefault();
 			e.stopImmediatePropagation();
-		   $(".update").show(2000);
+		   $(".update").show(500);
 		   $(".change").text("send");
 		   $(this).attr({type:"submit"});
 		   $(this).toggleClass("msg_bt");
@@ -100,7 +118,7 @@ $(document).ready( function(){
 	$("body").on("mouseleave",".ms_leave",function(e){
 		    e.preventDefault();
 			e.stopImmediatePropagation();
-		   $(".update").hide(1000);
+		   $(".update").hide(500);
 		   $(".change").text("A few more details");
 		   $(".fm_btn").attr({type:"button"});
 		   $(".fm_btn").toggleClass("msg_bt");
@@ -166,17 +184,17 @@ $(document).ready( function(){
 	$("body").on("click",".pro_btn",function(e){
 		    e.preventDefault();
 			e.stopImmediatePropagation();
-		   $(".proj_update").show(1000);
+		   $(".proj_update").show(300);
 		   $(".proj_change").text("send");
 		   $(this).attr({type:"submit"});
 		   $(this).toggleClass("pro_btn");
 		   
 	}   );
 	//reduce field of proj form
-	$("body").on("mouseleave",".pro_leave",function(e){
+	$("body").on("mouseleave",".magic",function(e){
 		    e.preventDefault();
 			e.stopImmediatePropagation();
-		   $(".proj_update").hide(1000);
+		   $(".proj_update").hide(300);
 		   $(".proj_change").text("A few more details");
 		   $(".proje_btn").attr({type:"button"});
 		   $(".proje_btn").toggleClass("pro_btn");
