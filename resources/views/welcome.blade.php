@@ -338,7 +338,7 @@
 									  
 									  <div class="form-group  update " hidden>
 									   
-										<textarea class="form-control no-border sharubati-text" cols="3"  name="body"  placeholder="Type Message" required>Message</textarea>
+										<textarea class="form-control no-border sharubati-text" cols="3"  name="body"  placeholder="Type Message" required ></textarea>
 									  </div>
 <button type="button" class="sharubati-button pull-right msg_bt fm_btn"><b class="change">A few more details </b> <i class="fa fa-arrow-right"></i></button>
                                     </form>
