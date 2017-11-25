@@ -1,7 +1,7 @@
 <?php
 // config/database.php
 
-if ($url = env('CLEARDB_DATABASE_URL', false)) {
+if ($url = env('CLEARDB_DATABASE_URL')) {
     $parts = parse_url($url);
     $host = $parts["host"];
     $username = $parts["user"];
