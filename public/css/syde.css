@@ -355,6 +355,9 @@
 	margin-left: -30px;
 	margin-right: -30px;
 }
+.testimonial-container{
+	z-index: 999;
+}
 .testimonial-header{
 	text-align: center;
 	font-size: 20pt;

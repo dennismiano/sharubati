@@ -171,3 +171,26 @@
               </section>
             </div>
     </div>
+
+    <script>
+
+        (function($){
+            
+            //Plugin activation
+            $(window).enllax();
+            
+//            $('#some-id').enllax();
+            
+//            $('selector').enllax({
+//                type: 'background', // 'foreground'
+//                ratio: 0.5,
+//                direction: 'vertical' // 'horizontal'
+//            });
+            
+        })(jQuery);
+
+
+
+    </script>
+    <script src="{{ URL::asset('/js/carousel.js')}}"></script>
+    <script src="{{ URL::asset('/js/animations.js')}}"></script>

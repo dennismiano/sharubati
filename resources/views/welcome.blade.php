@@ -21,7 +21,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
         <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
         <script src="{{ URL::asset('/js/carousel.js')}}"></script>
-        <script src="{{ URL::asset('/js/animations.js')}}"></script>
         <script src="{{ URL::asset('/js/jquery.enllax.js')}}"></script>
        
         
@@ -119,15 +118,15 @@
 </script>
 <!--SERVICES-->
        
-        <div class="row main-services result_get">
+        <div class="row main-services">
             <div class="container">
                 <div class="col-md-4 animation-element bounce-up">
-                    <div class="subject services-statement">
+                    <div class="services-statement subject">
                         <h3 class="services-header">We are the perfect blend of aesthetics and function. And  we say it in the solutions we give</h3>
-                        <img class="border-bar img-responsive" src = "{{ URL::asset('/images/syde-images/border-bar.png')}}" alt = "computer with design elements">
-                        <p class="sharubati-text services-text">   We design custom solutions with your business in mind. We have what it takes to grow your brand both on print and display. We also craft custom  tools to help your business run efficiently.
+                        <img class="border-bar img-responsive subject" src = "{{ URL::asset('/images/syde-images/border-bar.png')}}" alt = "computer with design elements">
+                        <p class="sharubati-text services-text subject">   We design custom solutions with your business in mind. We have what it takes to grow your brand both on print and display. We also craft custom  tools to help your business run efficiently.
                             Business requirements are different and we have the creativity and analytical thinking to implement your business strategy in a way that your business enjoys value for money.
-                    </p>
+                        </p>
                     </div>
                 </div>
 
@@ -231,15 +230,17 @@
 
         <div class="row testimony">
             <div class="container animation-element bounce-up">
-                <h2 class="testimonial-header sharubati-title subject blue">What Our Customers Say About Us</h2>
-                
-                <div class="col-md-8 col-md-offset-2">
+                <div class="testimonial-container">
+                    <h2 class="testimonial-header sharubati-title subject blue">What Our Customers Say About Us</h2>
+                    
+                    <div class="col-md-8 col-md-offset-2">
 
-                        <img class="img-resonsive testimony-icon subject" src = "{{ URL::asset('/images/syde-images/testimony-speech-marks.png')}}" alt = "speech-marks">
+                            <img class="img-resonsive testimony-icon subject" src = "{{ URL::asset('/images/syde-images/testimony-speech-marks.png')}}" alt = "speech-marks">
 
-                            <p class="testimony-text sharubati-text align-center subject">
-                                When i was setting up, i needed a consultant who would help me appropiately position the brand and give it that unique identity.  <b>Sharubati Technologies</b> brought the business brand to life and implemented an effective way to gain awareness fast and i was amazed at how easily we hit our set threshold.<br><b>~ Oliver, Autokey.</b>
-                            </p>
+                                <p class="testimony-text sharubati-text align-center subject">
+                                    When i was setting up, i needed a consultant who would help me appropiately position the brand and give it that unique identity.  <b>Sharubati Technologies</b> brought the business brand to life and implemented an effective way to gain awareness fast and i was amazed at how easily we hit our set threshold.<br><b>~ Oliver, Autokey.</b>
+                                </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -367,6 +368,7 @@
 
 
     </script>
+    <script src="{{ URL::asset('/js/animations.js')}}"></script>
     </body>
 </html>
 
